@@ -1,0 +1,47 @@
+.segment-header {
+    box-shadow: 0px 4px 7px rgba(14, 17, 22, .09);
+}
+
+.segment-header .tab {
+    margin-left: 40px;
+}
+
+.segment-header .tab span {
+    padding: 12px 5px;
+    display: block;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+/deep/ label {
+    color: #B7B7B7;
+    font-size: 12px;
+}
+
+.tab.active {
+    border-bottom: 2px solid red;
+}
+
+.segment-actions [class^="icon-"],
+.segment-actions [class*=" icon-"] {
+    font-size: 18px;
+}
+
+.segment-actions li {
+    margin: 0;
+}
+
+.segment-actions li a {
+    height: 100%;
+    padding: 13px 16px;
+    border-left: .3px solid #eaeaea;
+    margin: 0;
+    color: #747474;
+    transition: color .1s linear;
+    display: block;
+}
+
+.segment-actions li a:hover {
+    text-decoration: none;
+    color: #F43A3A;
+}

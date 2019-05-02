@@ -3,12 +3,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
-import { DialogModule } from 'primeng/dialog';
-
+import {LayoutModule} from './modules/shared/layout/layout.module'
+import {MainTabsModule} from './modules/shared/main-tabs/main-tabs.module'
+import { segmentsService } from './services/segmentsService';
+import { SideMenuService } from './services/sidemenu.service';
+import { BreadcrumbService } from './services/breadcrumb.service';
 import { AppComponent } from './app.component';
+import { AngularSplitModule } from 'angular-split';
 
 @NgModule({
     declarations: [
@@ -18,13 +19,13 @@ import { AppComponent } from './app.component';
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
-        TableModule,
         HttpClientModule,
-        InputTextModule,
-        DialogModule,
-        ButtonModule
+        LayoutModule,
+        MainTabsModule,
+        AngularSplitModule.forRoot()
+
     ],
-    providers: [],
+    providers: [segmentsService, SideMenuService, BreadcrumbService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

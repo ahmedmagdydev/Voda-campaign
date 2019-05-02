@@ -1,0 +1,63 @@
+.flex-1{
+	flex: 1;
+}
+/deep/ .ui-tabview-panels{
+	padding: 0 !important;
+	border: 0 !important;
+}
+/deep/ body .ui-tabview .ui-tabview-panels .ui-tabview-panel{
+	    /*padding: 0.571em 1em;*/
+    border: 1px solid #c8c8c8;
+}
+/deep/ .ui-tabview {
+	margin-top: 14px;
+}
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active,
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover{
+	background-color: #ffffff;
+	border: 0;
+	    padding: 6px 0;
+	    box-shadow: 1px -1px 2px rgba(0,0,0,.08);
+}
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active a,
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a,
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover a .ui-tabview-left-icon,
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active .ui-tabview-close{
+	color: #1D2023;
+
+}
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li,
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li:hover,
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover{
+	background-color: rgba(255,255,255,.62);
+	border: 0;
+	border-radius: 6px 6px 0  0;
+	outline: none;
+}
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li a{
+	color: rgba(0,0,0,.35);
+}
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: flex-end;
+}
+/deep/ body .ui-tabview .ui-tabview-panels .ui-tabview-panel{
+	border: 0;
+}
+/deep/ body .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content .ui-treenode-label.ui-state-highlight{
+	background-color: transparent;
+	color: #000;
+	font-weight: bolder;
+}
+/deep/ body .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content{
+	outline: none;
+}
+
+/deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav {
+	overflow-x: auto;
+	overflow-y: hidden;
+}

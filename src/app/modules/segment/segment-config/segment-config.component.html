@@ -1,0 +1,64 @@
+<div class="p-3">
+
+  <p-accordion [multiple]="true">
+    <p-accordionTab header="Criteria">
+     <app-text-editor></app-text-editor>
+    </p-accordionTab>
+    <p-accordionTab header="Stored Fields">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">table name</th>
+            <th scope="col">Data Attribute</th>
+            <th scope="col">Priority</th>
+            <th scope="col" class="text-center">Data Attribute</th>
+            <th scope="col" class="text-center">Deduplicate</th>
+            <th scope="col" class="text-center">Substitution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>V_CONTRACT</td>
+            <td>CONTRACT_KE</td>
+            <td>High</td>
+            <td class="text-center">
+              <p-checkbox name="groupname" value="val1"></p-checkbox>
+            </td>
+            <td class="text-center">
+              <p-checkbox name="groupname" value="val2"></p-checkbox>
+            </td>
+            
+            <td class="text-center">
+              <p-checkbox name="groupname" value="val3"></p-checkbox>
+            </td>
+          </tr>
+           <tr>
+             <td>V_CONTRACT</td>
+             <td>CONTRACT_KE</td>
+             <td>High</td>
+             <td class="text-center">
+               <p-checkbox name="groupname" value="val1"></p-checkbox>
+             </td>
+             <td class="text-center">
+               <p-checkbox name="groupname" value="val2"></p-checkbox>
+             </td>
+
+             <td class="text-center">
+               <p-checkbox name="groupname" value="val3"></p-checkbox>
+             </td>
+           </tr>
+        </tbody>
+      </table>
+
+    </p-accordionTab>
+    <p-accordionTab header="Generated SQL">
+      After a break of more than 15 years, director Francis Ford Coppola and writer Mario Puzo returned to the
+      well
+      for this third and final story of the fictional Corleone crime family. Two decades have passed, and
+      crime
+      kingpin Michael Corleone, now divorced from his wife Kay has nearly succeeded in keeping his promise
+      that his
+      family would one day be completely legitimate.
+    </p-accordionTab>
+  </p-accordion>
+</div>

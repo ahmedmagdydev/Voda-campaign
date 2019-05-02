@@ -3,7 +3,7 @@
 # compiled output
 /dist
 /tmp
-
+/voda-electron
 # dependencies
 /node_modules
 

@@ -1,0 +1,8 @@
+
+	<p-tabView (onChange)="onTabChange($event)">
+	    <p-tabPanel [closable]="true" [leftIcon]="segment.icon" [header]="segment.label"
+	    	*ngFor="let segment of segments; let i = index" [selected]="i == 0">
+	        <app-segment *ngIf="segment.type == 'segment'"></app-segment>
+	    </p-tabPanel> 
+	</p-tabView>
+

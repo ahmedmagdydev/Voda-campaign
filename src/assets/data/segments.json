@@ -1,0 +1,427 @@
+[
+  {
+    "name": "segments 1",
+    "icon": "icon-layer",
+    "tree": {
+      "context": [
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        },
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        },
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        },
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        }
+      ],
+      "data": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "data": "Red Semgnents v01",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v01",
+                  "open": true,
+                  "id": 5,
+                  "type": "segment",
+                  "versions": [
+                    {
+                      "label": "v1"
+                    },
+                    {
+                      "label": "v2"
+                    }
+                  ]
+                },
+                {
+                  "data": "Red Semgnents v02",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v02",
+                  "open": true,
+                  "id": 1,
+                  "type": "segment"
+                }
+              ],
+              "collapsedIcon": "icon-layer",
+              "data": "Red Semgnents",
+              "expandedIcon": "icon-layer",
+              "label": "Red Semgnents"
+            },
+            {
+              "children": [
+                {
+                  "data": "Invoices for this month",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Invoices",
+                  "open": true,
+                  "type": "segment"
+                }
+              ],
+              "collapsedIcon": "icon-layer",
+              "data": "Home Folder",
+              "expandedIcon": "icon-layer",
+              "label": "Home"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Segmaentation Tree",
+          "expandedIcon": "icon-layer",
+          "label": "Segmaentation Tree"
+        },
+        {
+          "children": [
+            {
+              "data": "Barcelona Photo",
+              "icon": "fa fa-file-image-o",
+              "label": "barcelona.jpg"
+            },
+            {
+              "data": "PrimeFaces Logo",
+              "icon": "fa fa-file-image-o",
+              "label": "logo.jpg"
+            },
+            {
+              "data": "PrimeUI Logo",
+              "icon": "fa fa-file-image-o",
+              "label": "primeui.png"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Pictures Folder",
+          "expandedIcon": "icon-layer",
+          "label": "Pictures"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "data": "Scarface Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Scarface"
+                },
+                {
+                  "data": "Serpico Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Serpico"
+                }
+              ],
+              "data": "Pacino Movies",
+              "label": "Al Pacino"
+            },
+            {
+              "children": [
+                {
+                  "data": "Goodfellas Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Goodfellas"
+                },
+                {
+                  "data": "Untouchables Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Untouchables"
+                }
+              ],
+              "data": "De Niro Movies",
+              "label": "Robert De Niro"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Movies Folder",
+          "expandedIcon": "icon-layer",
+          "label": "Movies"
+        }
+      ]
+    }
+  },
+  {
+    "name": "segments 2",
+    "icon": "icon-layer",
+    "tree": {
+      "context": [
+        
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        },
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        }
+      ],
+      "data": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "data": "Red Semgnents v01",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v01",
+                  "open": true,
+                  "id": 5,
+                  "type": "segment",
+                  "versions": [
+                    {
+                      "label": "v1"
+                    },
+                    {
+                      "label": "v2"
+                    }
+                  ]
+                },
+                {
+                  "data": "Red Semgnents v02",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v02",
+                  "open": true,
+                  "id": 1,
+                  "type": "segment"
+                }
+              ],
+              "collapsedIcon": "icon-layer",
+              "data": "Red Semgnents",
+              "expandedIcon": "icon-layer",
+              "label": "Red Semgnents"
+            },
+            {
+              "children": [
+                {
+                  "data": "Invoices for this month",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Invoices",
+                  "open": true,
+                  "type": "segment"
+                }
+              ],
+              "collapsedIcon": "icon-layer",
+              "data": "Home Folder",
+              "expandedIcon": "icon-layer",
+              "label": "Home"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Segmaentation Tree",
+          "expandedIcon": "icon-layer",
+          "label": "Segmaentation Tree"
+        },
+        {
+          "children": [
+            {
+              "data": "Barcelona Photo",
+              "icon": "fa fa-file-image-o",
+              "label": "barcelona.jpg"
+            },
+            {
+              "data": "PrimeFaces Logo",
+              "icon": "fa fa-file-image-o",
+              "label": "logo.jpg"
+            },
+            {
+              "data": "PrimeUI Logo",
+              "icon": "fa fa-file-image-o",
+              "label": "primeui.png"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Pictures Folder",
+          "expandedIcon": "icon-layer",
+          "label": "Pictures"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "data": "Scarface Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Scarface"
+                },
+                {
+                  "data": "Serpico Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Serpico"
+                }
+              ],
+              "data": "Pacino Movies",
+              "label": "Al Pacino"
+            },
+            {
+              "children": [
+                {
+                  "data": "Goodfellas Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Goodfellas"
+                },
+                {
+                  "data": "Untouchables Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Untouchables"
+                }
+              ],
+              "data": "De Niro Movies",
+              "label": "Robert De Niro"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Movies Folder",
+          "expandedIcon": "icon-layer",
+          "label": "Movies"
+        }
+      ]
+    }
+  },
+  {
+    "name": "segments 3",
+    "icon": "icon-layer",
+    "tree": {
+      "context": [
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        },
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        },
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        },
+        {
+          "icon": "icon-layer",
+          "label": "open"
+        }
+      ],
+      "data": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "data": "Red Semgnents v01",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v01",
+                  "open": true,
+                  "id": 5,
+                  "type": "segment",
+                  "versions": [
+                    {
+                      "label": "v1"
+                    },
+                    {
+                      "label": "v2"
+                    }
+                  ]
+                },
+                {
+                  "data": "Red Semgnents v02",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v02",
+                  "open": true,
+                  "id": 1,
+                  "type": "segment"
+                }
+              ],
+              "collapsedIcon": "icon-layer",
+              "data": "Red Semgnents",
+              "expandedIcon": "icon-layer",
+              "label": "Red Semgnents"
+            },
+            {
+              "children": [
+                {
+                  "data": "Invoices for this month",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Invoices",
+                  "open": true,
+                  "type": "segment"
+                }
+              ],
+              "collapsedIcon": "icon-layer",
+              "data": "Home Folder",
+              "expandedIcon": "icon-layer",
+              "label": "Home"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Segmaentation Tree",
+          "expandedIcon": "icon-layer",
+          "label": "Segmaentation Tree"
+        },
+        {
+          "children": [
+            {
+              "data": "Barcelona Photo",
+              "icon": "fa fa-file-image-o",
+              "label": "barcelona.jpg"
+            },
+            {
+              "data": "PrimeFaces Logo",
+              "icon": "fa fa-file-image-o",
+              "label": "logo.jpg"
+            },
+            {
+              "data": "PrimeUI Logo",
+              "icon": "fa fa-file-image-o",
+              "label": "primeui.png"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Pictures Folder",
+          "expandedIcon": "icon-layer",
+          "label": "Pictures"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "data": "Scarface Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Scarface"
+                },
+                {
+                  "data": "Serpico Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Serpico"
+                }
+              ],
+              "data": "Pacino Movies",
+              "label": "Al Pacino"
+            },
+            {
+              "children": [
+                {
+                  "data": "Goodfellas Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Goodfellas"
+                },
+                {
+                  "data": "Untouchables Movie",
+                  "icon": "fa fa-file-video-o",
+                  "label": "Untouchables"
+                }
+              ],
+              "data": "De Niro Movies",
+              "label": "Robert De Niro"
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Movies Folder",
+          "expandedIcon": "icon-layer",
+          "label": "Movies"
+        }
+      ]
+    }
+  }
+]

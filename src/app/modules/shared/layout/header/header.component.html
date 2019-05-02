@@ -1,0 +1,14 @@
+<header class="d-flex align-items-center">
+	<span class="icon-menu" (click)="toggleMenu()"></span>
+	<div class="logo d-flex align-items-center">
+	<span class="icon-vodafone">
+		<span class="path1"></span><span class="path2"></span></span>
+		<h1>Vodafone Campaign Tool</h1>
+	</div>
+	<app-breadcrumb></app-breadcrumb>
+	<div class="ml-auto d-flex align-items-center">
+		<span class="icon-search"></span>
+		<p-menu #menu [popup]="true" [model]="items"></p-menu>
+		<div (click)="menu.toggle($event)">Welcome Mohamed Ali <span class="icon-expand_more"></span></div>
+	</div>
+</header>
