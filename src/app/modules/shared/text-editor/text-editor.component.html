@@ -1,4 +1,19 @@
- <textarea #criteria rows="1" class="form-control" (contextmenu)="openCm($event, criteriaContextMenu)"
-   (keypress)="openCm($event,criteriaContextMenu)" pInputTextarea autoResize="autoResize"></textarea>
- <p-contextMenu #criteriaContextMenu [target]="criteria" [model]="items">
- </p-contextMenu>
+<div class="textarea-wrapper" #textareaWrapper>
+  <div class="backdrop" #backdrop>
+    <!-- <div class="highlights">{{ applyHighlights(criteriaValue) }}</div> -->
+    <div class="highlights" #highlights></div>
+  </div>
+  <textarea
+    #criteria
+    [(ngModel)]="criteriaValue"
+    rows="1"
+    class="form-control"
+    (contextmenu)="openCm($event, criteriaContextMenu)"
+    (keypress)="openCm($event, criteriaContextMenu)"
+    (keyup)="applyHighlights($event, criteriaValue)"
+    (scroll)="scrollHandler($event)"
+    pInputTextarea
+  ></textarea>
+  <p-contextMenu #criteriaContextMenu [target]="criteria" [model]="items">
+  </p-contextMenu>
+</div>

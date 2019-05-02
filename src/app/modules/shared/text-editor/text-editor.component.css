@@ -1,0 +1,58 @@
+.highlights,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+.textarea-wrapper,
+.backdrop,
+textarea {
+  height: 180px;
+}
+.textarea-wrapper {
+  display: block;
+  margin: 0 auto;
+  transform: translateZ(0);
+  -webkit-text-size-adjust: none;
+  position: relative;
+}
+
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  border: 2px solid #685972;
+  background-color: #fff;
+  overflow: auto;
+  pointer-events: none;
+  transition: transform 1s;
+  width: 100%;
+}
+
+.highlights {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #000;
+}
+
+textarea {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+  border: 2px solid #74637f;
+  border-radius: 0;
+  color: transparent;
+  background-color: transparent;
+  overflow: auto;
+  resize: none;
+  transition: transform 1s;
+  caret-color: red;
+}
+textarea:focus {
+  background: transparent;
+  color: transparent;
+}
+.highlights /deep/ .text-cyan {
+  color: #10b3d2;
+}
