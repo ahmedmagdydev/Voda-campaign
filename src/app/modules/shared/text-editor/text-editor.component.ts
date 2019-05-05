@@ -39,8 +39,8 @@ export class TextEditorComponent implements OnInit {
   applyHighlights(e, text) {
     text = text
       .replace(/\n$/g, '\n\n')
-      .replace(/\bOR\b/g, '<span class="text-cyan">$&</span>')
-      .replace(/\bAND\b/g, '<span class="text-cyan">$&</span>');
+      .replace(/\b[oO][rR]\b/g, '<span class="text-cyan">$&</span>')
+      .replace(/\b[aA][nN][dD]\b/g, '<span class="text-cyan">$&</span>');
     this.highlightsRef.nativeElement.innerHTML = text;
     this.scrollHandler(e);
   }
