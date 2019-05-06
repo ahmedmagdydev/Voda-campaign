@@ -1,27 +1,54 @@
 <div class="d-flex segment-header">
-	<ul class="tabs list-inline mr-auto mb-0">
-		<li class="tab list-inline-item " [ngClass]="{'active': segmentTab == 'segmentDetails'}"
-			(click)="changeTab('segmentDetails')">
-			<span>Segment
-				Details</span></li>
-		<li class="tab list-inline-item" [ngClass]="{'active':segmentTab == 'segmentConfig'}" (click)="changeTab('segmentConfig')">
-			<span>Configuration</span></li>
-		<li class="tab list-inline-item"><span>Audit</span></li>
-		<li class="tab list-inline-item"><span>Data</span></li>
-	</ul>
-	<ul class="list-inline mb-0 segment-actions">
-		<li class="list-inline-item"><a href="#"><span class="icon-save"></span></a></li>
-		<li class="list-inline-item"><a href="#"><span class="icon-pause"></span></a></li>
-		<li class="list-inline-item"><a href="#"><span class="icon-delete"></span></a></li>
-		<li class="list-inline-item"><a href="#"><span class="icon-more_horiz"></span></a></li>
-	</ul>
+  <ul class="tabs list-inline mr-auto mb-0">
+    <li
+      class="tab list-inline-item "
+      [ngClass]="{ active: segmentTab == 'segmentDetails' }"
+      (click)="changeTab('segmentDetails')"
+    >
+      <span>Segment Details</span>
+    </li>
+    <li
+      class="tab list-inline-item"
+      [ngClass]="{ active: segmentTab == 'segmentConfig' }"
+      (click)="changeTab('segmentConfig')"
+    >
+      <span>Configuration</span>
+    </li>
+    <li class="tab list-inline-item">
+      <span>Audit</span>
+    </li>
+    <li
+      class="tab list-inline-item"
+      [ngClass]="{ active: segmentTab == 'segmentData' }"
+      (click)="changeTab('segmentData')"
+    >
+      <span>Data</span>
+    </li>
+  </ul>
+  <ul class="list-inline mb-0 segment-actions">
+    <li class="list-inline-item">
+      <a href="#"><span class="icon-save"></span></a>
+    </li>
+    <li class="list-inline-item">
+      <a href="#"><span class="icon-pause"></span></a>
+    </li>
+    <li class="list-inline-item">
+      <a href="#"><span class="icon-delete"></span></a>
+    </li>
+    <li class="list-inline-item">
+      <a href="#"><span class="icon-more_horiz"></span></a>
+    </li>
+  </ul>
 </div>
 <div class="segment-tabs" [ngSwitch]="segmentTab">
-	<div class="p-4" *ngSwitchCase="'segmentDetails'">
-		<app-segment-details></app-segment-details>
-	</div>
-	<div *ngSwitchCase="'segmentConfig'">
-		<app-segment-config></app-segment-config>
-	</div>
-	<div *ngSwichDefault></div>
+  <div class="p-4" *ngSwitchCase="'segmentDetails'">
+    <app-segment-details></app-segment-details>
+  </div>
+  <div *ngSwitchCase="'segmentConfig'">
+    <app-segment-config></app-segment-config>
+  </div>
+  <div *ngSwitchCase="'segmentData'">
+    <app-segment-data></app-segment-data>
+  </div>
+  <div *ngSwichDefault></div>
 </div>

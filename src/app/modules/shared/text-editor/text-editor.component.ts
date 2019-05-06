@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -12,7 +12,11 @@ export class TextEditorComponent implements OnInit {
   @ViewChild('criteria') criteriaRef: ElementRef;
   @ViewChild('highlights') highlightsRef: ElementRef;
   @ViewChild('backdrop') backdropRef: ElementRef;
-  backdrop;
+
+  @Input() value: any;
+  @Input() disabled: any;
+  backdrop: any;
+  criteriaValue;
   constructor() {}
 
   ngOnInit() {
@@ -30,6 +34,14 @@ export class TextEditorComponent implements OnInit {
         }
       }
     ];
+    this.criteriaValue = this.value;
+    console.log(
+      'TCL: TextEditorComponent -> ngOnInit -> this.value',
+      this.value
+    );
+    if (this.criteriaValue !== undefined) {
+      this.applyHighlights(null, this.criteriaValue);
+    }
   }
   openCm(e, criteriaContextMenu, text) {
     if (e.code === 'Space' && e.ctrlKey) {
@@ -42,7 +54,9 @@ export class TextEditorComponent implements OnInit {
       .replace(/\b[oO][rR]\b/g, '<span class="text-cyan">$&</span>')
       .replace(/\b[aA][nN][dD]\b/g, '<span class="text-cyan">$&</span>');
     this.highlightsRef.nativeElement.innerHTML = text;
-    this.scrollHandler(e);
+    if (e !== null) {
+      this.scrollHandler(e);
+    }
   }
   scrollHandler(e) {
     const scroll = e.target.scrollTop;

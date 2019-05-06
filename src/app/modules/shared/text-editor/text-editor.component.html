@@ -11,6 +11,7 @@
     (keypress)="openCm($event, criteriaContextMenu)"
     (keyup)="applyHighlights($event, criteriaValue)"
     (scroll)="scrollHandler($event)"
+    [disabled]="disabled"
     pInputTextarea
   ></textarea>
   <p-contextMenu #criteriaContextMenu [target]="criteria" [model]="items">
