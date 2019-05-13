@@ -10,16 +10,24 @@ import { FormsModule } from '@angular/forms';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { SegmentDetailsComponent } from './segment-details/segment-details.component';
 import { SegmentConfigComponent } from './segment-config/segment-config.component';
+import { SegmentAuditComponent } from './segment-audit/segment-audit.component';
 import { TextEditorModule } from '../shared/text-editor/text-editor.module';
+import { MenuModule } from 'primeng/menu';
 import { SegmentDataComponent } from './segment-data/segment-data.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { TableModule } from 'primeng/table';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { auditService } from '../../services/audit-service';
 
 @NgModule({
   declarations: [
     SegmentComponent,
     SegmentDetailsComponent,
     SegmentConfigComponent,
-    SegmentDataComponent
+    SegmentDataComponent,
+    SegmentAuditComponent
   ],
+  providers: [auditService],
   imports: [
     CommonModule,
     ProgressBarModule,
@@ -29,7 +37,11 @@ import { SegmentDataComponent } from './segment-data/segment-data.component';
     InputTextModule,
     TextEditorModule,
     FormsModule,
-    InputSwitchModule
+    InputSwitchModule,
+    MenuModule,
+    DropdownModule,
+    TableModule,
+    MultiSelectModule
   ],
   exports: [SegmentComponent]
 })

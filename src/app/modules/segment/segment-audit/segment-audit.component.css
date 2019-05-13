@@ -1,0 +1,87 @@
+.color-grey{
+    color: #B7B7B7;
+    font-size: 12px;
+}
+
+.audit-table /deep/ .ui-table .ui-table-thead > tr > th {
+    padding: 0.571em 0.857em;
+    border: 1px solid transparent;
+    font-weight: 700;
+    color: #333333;
+    background-color: #FFFFFE;
+    width: 197px;
+    text-align: left;
+}
+.audit-table /deep/ .ui-multiselect-panel .ui-multiselect-header {
+    padding: 0.429em 0.857em 0.429em 0.857em;
+    border-bottom: 1px solid transparent;
+    color: #333333;
+    background-color: #ffffff;
+    margin: 0;
+    display: none;
+}
+.audit-table /deep/.ui-table .ui-table-caption, body .ui-table .ui-table-summary {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #c8c8c8;
+    padding: 0.571em 1em;
+    text-align: left;
+    display: none;
+}
+.audit-table /deep/ .ui-multiselect .ui-multiselect-trigger .ui-multiselect-trigger-icon {
+    top: 50%;
+    left: 50%;
+    margin-top: -.5em;
+    margin-left: -7.5em;
+    position: absolute;
+}
+
+.audit-table /deep/ .ui-multiselect .ui-multiselect-trigger {
+    background-color: transparent;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    padding: 0;
+    color: #848484;
+}
+
+.audit-table /deep/ .ui-multiselect {
+    background: transparent;
+    border: 0;
+}
+.audit-table /deep/ .ui-table .ui-table-tbody > tr > td {
+    background-color: inherit;
+    border: none;
+}
+.audit-table /deep/ .ui-multiselect .ui-multiselect-label {
+    /* padding: 0.429em; */
+    padding-right: 2em;
+    color: #333333;
+}
+.audit-table /deep/ .ui-paginator {
+    background-color: #f4f4f4;
+    padding: 0;
+    border: none;
+    display: none;
+}
+.ui-multiselect /deep/ .ui-multiselect-label {
+    display: block;
+    /* padding: .25em 2em .25em .25em; */
+    width: auto;
+    border: 0;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.progressBarHeight /deep/ .ui-progressbar {
+    border: 0 none;
+    height: 12px !important;
+    background-color: #eaeaea;
+}
+
+
+.footer-row{
+    border: 1px solid #8080805c;
+    border-right: none;
+    border-left: none;
+}

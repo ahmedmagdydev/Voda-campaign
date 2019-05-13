@@ -5,20 +5,32 @@
     "tree": {
       "context": [
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-info",
+          "label": "Show Details"
         },
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-save",
+          "label": "Save"
         },
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-play",
+          "label": "Execute"
         },
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-resume",
+          "label": "Resume"
+        },
+        {
+          "icon": "icon-stop",
+          "label": "Stop"
+        },
+        {
+          "icon": "icon-copy",
+          "label": "Copy"
+        },
+        {
+          "icon": "icon-delete",
+          "label": "Delete"
         }
       ],
       "data": [
@@ -148,14 +160,33 @@
     "icon": "icon-layer",
     "tree": {
       "context": [
-        
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-info",
+          "label": "Show Details"
         },
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-save",
+          "label": "Save"
+        },
+        {
+          "icon": "icon-play",
+          "label": "Execute"
+        },
+        {
+          "icon": "icon-resume",
+          "label": "Resume"
+        },
+        {
+          "icon": "icon-stop",
+          "label": "Stop"
+        },
+        {
+          "icon": "icon-copy",
+          "label": "Copy"
+        },
+        {
+          "icon": "icon-delete",
+          "label": "Delete"
         }
       ],
       "data": [
@@ -286,20 +317,32 @@
     "tree": {
       "context": [
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-info",
+          "label": "Show Details"
         },
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-save",
+          "label": "Save"
         },
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-play",
+          "label": "Execute"
         },
         {
-          "icon": "icon-layer",
-          "label": "open"
+          "icon": "icon-resume",
+          "label": "Resume"
+        },
+        {
+          "icon": "icon-stop",
+          "label": "Stop"
+        },
+        {
+          "icon": "icon-copy",
+          "label": "Copy"
+        },
+        {
+          "icon": "icon-delete",
+          "label": "Delete"
         }
       ],
       "data": [

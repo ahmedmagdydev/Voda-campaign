@@ -14,7 +14,11 @@
     >
       <span>Configuration</span>
     </li>
-    <li class="tab list-inline-item">
+    <li
+      class="tab list-inline-item"
+      [ngClass]="{ active: segmentTab == 'segmentAudit' }"
+      (click)="changeTab('segmentAudit')"
+    >
       <span>Audit</span>
     </li>
     <li
@@ -36,7 +40,10 @@
       <a href="#"><span class="icon-delete"></span></a>
     </li>
     <li class="list-inline-item">
-      <a href="#"><span class="icon-more_horiz"></span></a>
+      <a href="#" (click)="menu.toggle($event)"
+        ><span class="icon-more_horiz"></span
+      ></a>
+      <p-menu #menu [popup]="true" [model]="moreActions"></p-menu>
     </li>
   </ul>
 </div>
@@ -47,8 +54,28 @@
   <div *ngSwitchCase="'segmentConfig'">
     <app-segment-config></app-segment-config>
   </div>
+  <div *ngSwitchCase="'segmentAudit'">
+    <app-segment-audit></app-segment-audit>
+  </div>
   <div *ngSwitchCase="'segmentData'">
     <app-segment-data></app-segment-data>
   </div>
   <div *ngSwichDefault></div>
+</div>
+<div class="container-fluid">
+  <div class="row pt-2 pb-2 mt-4 footer-row">
+    <div class="col-7">
+      <strong> Running </strong>: Vodafone Campaign tool System shall be logged
+      in to the System
+    </div>
+    <div class="col-2"></div>
+    <div class="col-2 pt-1">
+      <p-progressBar
+        class="progressBarHeight"
+        [value]="75"
+        [showValue]="false"
+      ></p-progressBar>
+    </div>
+    <div class="col-1">{{ progressBar }} %</div>
+  </div>
 </div>
