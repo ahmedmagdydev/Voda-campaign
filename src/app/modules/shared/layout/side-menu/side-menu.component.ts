@@ -1,10 +1,7 @@
-import { Component, OnInit, EventEmitter, Input } from '@angular/core';
-// import {MenuItem} from 'primeng/api';
+import { Component, OnInit } from '@angular/core';
 import { TreeNode } from 'primeng/api';
-import { MenuItem } from 'primeng/api';
 import { segmentsService } from '../../../../services/segmentsService';
 import { SideMenuService } from '../../../../services/sidemenu.service';
-
 
 @Component({
   selector: 'app-side-menu',
@@ -14,37 +11,94 @@ import { SideMenuService } from '../../../../services/sidemenu.service';
 export class SideMenuComponent implements OnInit {
   // contextItems: MenuItem[];
   segmentsTree;
+  segmentContext;
   selectedSegment: TreeNode;
   collapseSegment: Boolean;
   segmentExpanded: String = 'notyet';
-  // tslint:disable-next-line: no-shadowed-variable
-  constructor(private segmentsService: segmentsService,
+  specific = false;
+  custom: boolean;
+  constructor(
+    // tslint:disable-next-line: no-shadowed-variable
+    private segmentsService: segmentsService,
     private sideMenuService: SideMenuService
-  ) { }
+  ) {}
 
   nodeSelected(event, segmentName) {
-    if (event.node.open) {
+    if (event.node.selectable) {
       // tslint:disable-next-line: no-unused-expression
-      // console.log(this.sideMenuService.segment);
-      this.sideMenuService.open(event.node.label,
+      this.sideMenuService.open(
+        event.node.label,
         event.node.type,
         event.node.id,
         event.node.parent,
         event.node.icon,
         event.node.versions,
-        segmentName);
-
+        segmentName,
+        event.node.details
+      );
     }
   }
-  dragStart(e, n) {
-    console.log(e);
-    console.log(n);
-  }
+
   ngOnInit() {
-    this.segmentsService.getFiles().then(
-      segments => this.segmentsTree = segments
-    );
+    this.segmentsService
+      .getFiles()
+      .then(segments => (this.segmentsTree = segments));
     this.collapseSegment = true;
+
+    this.segmentContext = [
+      {
+        icon: 'icon-info',
+        label: 'Show Details'
+      },
+      {
+        icon: 'icon-save',
+        label: 'Save'
+      },
+      {
+        icon: 'icon-play',
+        label: 'Execute'
+      },
+      {
+        icon: 'icon-resume',
+        label: 'Resume'
+      },
+      {
+        icon: '',
+        label: 'Scheduling Execution',
+        items: [
+          {
+            label: 'Specific Date & Time...',
+            command: () => {
+              this.specific = true;
+            }
+          },
+          {
+            label: 'Custom Recurrence...',
+            command: () => {
+              this.custom = true;
+            }
+          },
+          {
+            label: 'Periodic Recurrence...',
+            command: () => {
+              alert('asd');
+            }
+          }
+        ]
+      },
+      {
+        icon: 'icon-stop',
+        label: 'Stop'
+      },
+      {
+        icon: 'icon-copy',
+        label: 'Copy'
+      },
+      {
+        icon: 'icon-delete',
+        label: 'Delete'
+      }
+    ];
   }
 
   expandSegment(e, name) {

@@ -51,6 +51,84 @@
         }}</span>
       </ng-template>
     </p-tree>
-    <p-contextMenu #cm [model]="segmetTree.tree.context"></p-contextMenu>
   </li>
 </ul>
+<p-contextMenu #cm [model]="segmentContext" appendTo="body"></p-contextMenu>
+<p-dialog
+  [(visible)]="specific"
+  [draggable]="false"
+  [blockScroll]="true"
+  [closable]="false"
+  [appendTo]="body"
+  [style]="{ width: '446px', height: '537px' }"
+>
+  <p-header>
+    <div class="text-center">
+      <div class="text-light">Scheduling Execution</div>
+      <p class="text-bold">Specific Date & Time</p>
+    </div>
+  </p-header>
+  <div class="text-center">
+    <p-calendar [inline]="true"></p-calendar>
+    <div class="align-items-center d-flex justify-content-center ">
+      <label class="mb-0 mr-3" for="">Select Time</label>
+      <p-calendar [timeOnly]="true"></p-calendar>
+    </div>
+  </div>
+
+  <p-footer>
+    <div class="row">
+      <div class="col-6">
+        <button class="btn btn-secondary btn-block" (click)="specific = false">
+          cancel
+        </button>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-red btn-block">save</button>
+      </div>
+    </div>
+  </p-footer>
+</p-dialog>
+<p-dialog
+  [(visible)]="custom"
+  [draggable]="false"
+  [blockScroll]="true"
+  [closable]="false"
+  [appendTo]="body"
+  [style]="{ width: '540px' }"
+>
+  <p-header>
+    <div class="text-center">
+      <div class="text-light">Scheduling Execution</div>
+      <p class="text-bold">Custom Recurrence</p>
+    </div>
+  </p-header>
+  <div class="container">
+    <div class="align-items-center row justify-content-center ">
+      <div class="col-4">
+        <label class="mb-0 mr-3" for="">Repeat every</label>
+      </div>
+      <div class="col-4">
+        <input type="number" class="form-control" />
+      </div>
+      <div class="col-4">
+        <select name="" id="" class="form-control">
+          <option value="day">day</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <p-footer>
+    <div class="row">
+      <div class="col-6">
+        <button class="btn btn-secondary btn-block" (click)="custom = false">
+          cancel
+        </button>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-red btn-block">save</button>
+      </div>
+    </div>
+  </p-footer>
+</p-dialog>

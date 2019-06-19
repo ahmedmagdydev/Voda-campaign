@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -8,8 +8,11 @@ import { MenuItem } from 'primeng/api';
 })
 export class SegmentComponent implements OnInit {
   @Input() type: any;
+  @Input() details;
+  @Output() segmentDetails;
   segmentTab;
   moreActions: MenuItem[];
+  saveModal = false;
   constructor() {}
 
   ngOnInit() {

@@ -1,15 +1,12 @@
 <div class="static-menu">
   <div class="d-flex flex-column text-center">
-    <div><a href="#"><span class="icon-items"></span></a></div>
-    <div class="active"><a href="#"><span class="icon-layer"></span></a></div>
-    <div><a href="#"><span class="icon-filter_list"></span></a></div>
-    <div><a href="#"><span class="icon-textsms"></span></a></div>
-    <div><a href="#"><span class="icon-alarm"></span></a></div>
-    <div><a href="#"><span class="icon-checkmark"></span></a></div>
-    <div><a href="#"><span class="icon-low_priority"></span></a></div>
-    <div><a href="#"><span class="icon-items-check"></span></a></div>
-    <div><a href="#"><span class="icon-dashboard"></span></a></div>
-    <div class="mt-auto"><a href="#"><span class="icon-notifications"></span></a></div>
-    <div><a href="#"><span class="icon-settings"></span></a></div>
-  </div>  
-</div>    
+    <div
+      *ngFor="let item of items; let i = index"
+      [ngClass]="{ active: activeItem(i) }"
+      pTooltip="{{ item.title }}"
+      tooltipPosition="right"
+    >
+      <a href="{{ item.link }}"><span class="{{ item.icon }}"></span></a>
+    </div>
+  </div>
+</div>

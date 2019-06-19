@@ -11,6 +11,7 @@ import { InputSwitchModule } from 'primeng/inputswitch';
 import { SegmentDetailsComponent } from './segment-details/segment-details.component';
 import { SegmentConfigComponent } from './segment-config/segment-config.component';
 import { SegmentAuditComponent } from './segment-audit/segment-audit.component';
+import { SaveModalModule } from '../shared/save-modal/save-modal.module';
 import { TextEditorModule } from '../shared/text-editor/text-editor.module';
 import { MenuModule } from 'primeng/menu';
 import { SegmentDataComponent } from './segment-data/segment-data.component';
@@ -41,7 +42,8 @@ import { auditService } from '../../services/audit-service';
     MenuModule,
     DropdownModule,
     TableModule,
-    MultiSelectModule
+    MultiSelectModule,
+    SaveModalModule
   ],
   exports: [SegmentComponent]
 })

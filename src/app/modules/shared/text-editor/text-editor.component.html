@@ -14,6 +14,11 @@
     [disabled]="disabled"
     pInputTextarea
   ></textarea>
-  <p-contextMenu #criteriaContextMenu [target]="criteria" [model]="items">
+  <p-contextMenu
+    #criteriaContextMenu
+    [target]="criteria"
+    [model]="items"
+    appendTo="body"
+  >
   </p-contextMenu>
 </div>

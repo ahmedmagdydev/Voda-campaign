@@ -1,8 +1,28 @@
+<div class="tabs-container">
+  <p-tabView (onChange)="onTabChange($event)" (onClose)="handleClose($event)">
+    <p-tabPanel
+      [closable]="true"
+      [leftIcon]="segment.icon"
+      [header]="segment.label"
+      *ngFor="let segment of segments; let i = index"
+      [selected]="i == selectedTab"
+    >
+      <app-segment
+        *ngIf="segment.type == 'segment'"
+        [details]="segment.details"
+      ></app-segment>
+    </p-tabPanel>
+  </p-tabView>
+  <div class="all-tabs" *ngIf="segmentsMenuArray.length > 0">
+    <div (click)="segmentsMenu.toggle($event)">
+      <span class="icon-more_horiz"></span>
+    </div>
 
-	<p-tabView (onChange)="onTabChange($event)">
-	    <p-tabPanel [closable]="true" [leftIcon]="segment.icon" [header]="segment.label"
-	    	*ngFor="let segment of segments; let i = index" [selected]="i == 0">
-	        <app-segment *ngIf="segment.type == 'segment'"></app-segment>
-	    </p-tabPanel> 
-	</p-tabView>
-
+    <p-menu
+      [model]="segmentsMenuArray"
+      #segmentsMenu
+      appendTo="body"
+      [popup]="true"
+    ></p-menu>
+  </div>
+</div>

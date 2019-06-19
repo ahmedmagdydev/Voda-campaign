@@ -31,7 +31,9 @@
   </ul>
   <ul class="list-inline mb-0 segment-actions">
     <li class="list-inline-item">
-      <a href="#"><span class="icon-save"></span></a>
+      <a href="#" (click)="saveModal = !saveModal"
+        ><span class="icon-save"></span
+      ></a>
     </li>
     <li class="list-inline-item">
       <a href="#"><span class="icon-pause"></span></a>
@@ -43,24 +45,28 @@
       <a href="#" (click)="menu.toggle($event)"
         ><span class="icon-more_horiz"></span
       ></a>
-      <p-menu #menu [popup]="true" [model]="moreActions"></p-menu>
+      <p-menu
+        #menu
+        [popup]="true"
+        appendTo="body"
+        [model]="moreActions"
+      ></p-menu>
     </li>
   </ul>
 </div>
-<div class="segment-tabs" [ngSwitch]="segmentTab">
-  <div class="p-4" *ngSwitchCase="'segmentDetails'">
-    <app-segment-details></app-segment-details>
+<div class="segment-tabs">
+  <div class="p-4" [ngClass]="{ show: segmentTab == 'segmentDetails' }">
+    <app-segment-details [segmentDetails]="details"></app-segment-details>
   </div>
-  <div *ngSwitchCase="'segmentConfig'">
+  <div [ngClass]="{ show: segmentTab == 'segmentConfig' }">
     <app-segment-config></app-segment-config>
   </div>
-  <div *ngSwitchCase="'segmentAudit'">
+  <div [ngClass]="{ show: segmentTab == 'segmentAudit' }">
     <app-segment-audit></app-segment-audit>
   </div>
-  <div *ngSwitchCase="'segmentData'">
+  <div [ngClass]="{ show: segmentTab == 'segmentData' }">
     <app-segment-data></app-segment-data>
   </div>
-  <div *ngSwichDefault></div>
 </div>
 <div class="container-fluid">
   <div class="row pt-2 pb-2 mt-4 footer-row">
@@ -79,3 +85,5 @@
     <div class="col-1">{{ progressBar }} %</div>
   </div>
 </div>
+
+<app-save-modal [display]="saveModal"></app-save-modal>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-segment-details',
@@ -6,12 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./segment-details.component.css']
 })
 export class SegmentDetailsComponent implements OnInit {
-  nameDisabled=true;
-  constructor() { }
+  nameDisabled = true;
+  @Input() segmentDetails;
+  details;
+  runningValue;
+  constructor() {}
 
   ngOnInit() {
+    this.details = this.segmentDetails;
+    setTimeout(() => {
+      this.runningValue = this.details.runningValue;
+    }, 500);
   }
-  toggleDisabled(){
+  toggleDisabled() {
     this.nameDisabled = !this.nameDisabled;
   }
 }

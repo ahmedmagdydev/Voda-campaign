@@ -21,6 +21,21 @@
           "label": "Resume"
         },
         {
+          "icon": "",
+          "label": "Scheduling Execution",
+          "items": [
+            {
+              "label": "Specific Date & Time..."
+            },
+            {
+              "label": "Custom Recurrence..."
+            },
+            {
+              "label": "Periodic Recurrence..."
+            }
+          ]
+        },
+        {
           "icon": "icon-stop",
           "label": "Stop"
         },
@@ -42,9 +57,25 @@
                   "data": "Red Semgnents v01",
                   "icon": "fa fa-file-word-o",
                   "label": "Red Semgnents v01",
-                  "open": true,
+                  "selectable": true,
                   "id": 5,
                   "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  },
                   "versions": [
                     {
                       "label": "v1"
@@ -58,9 +89,25 @@
                   "data": "Red Semgnents v02",
                   "icon": "fa fa-file-word-o",
                   "label": "Red Semgnents v02",
-                  "open": true,
+                  "selectable": true,
                   "id": 1,
-                  "type": "segment"
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
                 }
               ],
               "collapsedIcon": "icon-layer",
@@ -74,8 +121,24 @@
                   "data": "Invoices for this month",
                   "icon": "fa fa-file-word-o",
                   "label": "Invoices",
-                  "open": true,
-                  "type": "segment"
+                  "selectable": true,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
                 }
               ],
               "collapsedIcon": "icon-layer",
@@ -177,6 +240,21 @@
           "label": "Resume"
         },
         {
+          "icon": "",
+          "label": "Scheduling Execution",
+          "items": [
+            {
+              "label": "Specific Date & Time..."
+            },
+            {
+              "label": "Custom Recurrence..."
+            },
+            {
+              "label": "Periodic Recurrence..."
+            }
+          ]
+        },
+        {
           "icon": "icon-stop",
           "label": "Stop"
         },
@@ -198,9 +276,25 @@
                   "data": "Red Semgnents v01",
                   "icon": "fa fa-file-word-o",
                   "label": "Red Semgnents v01",
-                  "open": true,
+                  "selectable": true,
                   "id": 5,
                   "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  },
                   "versions": [
                     {
                       "label": "v1"
@@ -214,9 +308,144 @@
                   "data": "Red Semgnents v02",
                   "icon": "fa fa-file-word-o",
                   "label": "Red Semgnents v02",
-                  "open": true,
+                  "selectable": true,
                   "id": 1,
-                  "type": "segment"
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Semgnents v02",
+                    "id": "32645",
+                    "version": "1",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
+                },
+                {
+                  "data": "Red Semgnents v03",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v03",
+                  "selectable": true,
+                  "id": 2,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Semgnents v03",
+                    "id": "21",
+                    "version": "3",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
+                },
+                {
+                  "data": "Red Semgnents v04",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v04",
+                  "selectable": true,
+                  "id": 3,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Semgnents v04",
+                    "id": "21",
+                    "version": "25",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
+                },
+                {
+                  "data": "Red Semgnents v05",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v05",
+                  "selectable": true,
+                  "id": 4,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Semgnents v05",
+                    "id": "1344",
+                    "version": "1",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": false
+                  }
+                },
+                {
+                  "data": "Red Semgnents v06",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v06",
+                  "selectable": true,
+                  "id": 6,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Semgnents v06",
+                    "id": "231",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
+                },
+                {
+                  "data": "Red Semgnents v07",
+                  "icon": "fa fa-file-word-o",
+                  "label": "Red Semgnents v07",
+                  "selectable": true,
+                  "id": 7,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
                 }
               ],
               "collapsedIcon": "icon-layer",
@@ -230,8 +459,24 @@
                   "data": "Invoices for this month",
                   "icon": "fa fa-file-word-o",
                   "label": "Invoices",
-                  "open": true,
-                  "type": "segment"
+                  "selectable": true,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
                 }
               ],
               "collapsedIcon": "icon-layer",
@@ -333,6 +578,21 @@
           "label": "Resume"
         },
         {
+          "icon": "",
+          "label": "Scheduling Execution",
+          "items": [
+            {
+              "label": "Specific Date & Time..."
+            },
+            {
+              "label": "Custom Recurrence..."
+            },
+            {
+              "label": "Periodic Recurrence..."
+            }
+          ]
+        },
+        {
           "icon": "icon-stop",
           "label": "Stop"
         },
@@ -354,9 +614,25 @@
                   "data": "Red Semgnents v01",
                   "icon": "fa fa-file-word-o",
                   "label": "Red Semgnents v01",
-                  "open": true,
+                  "selectable": true,
                   "id": 5,
                   "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  },
                   "versions": [
                     {
                       "label": "v1"
@@ -370,9 +646,25 @@
                   "data": "Red Semgnents v02",
                   "icon": "fa fa-file-word-o",
                   "label": "Red Semgnents v02",
-                  "open": true,
+                  "selectable": true,
                   "id": 1,
-                  "type": "segment"
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
                 }
               ],
               "collapsedIcon": "icon-layer",
@@ -386,8 +678,24 @@
                   "data": "Invoices for this month",
                   "icon": "fa fa-file-word-o",
                   "label": "Invoices",
-                  "open": true,
-                  "type": "segment"
+                  "selectable": true,
+                  "type": "segment",
+                  "details": {
+                    "name": "Red Segment",
+                    "id": "33887",
+                    "version": "6",
+                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                    "lastRunBy": "Ahmed Magdy",
+                    "lastRunDate": "monday 08 APril 2018",
+                    "lastUpdateDate": "monday 08 APril 2018",
+                    "createdBy": "ahmed magdy",
+                    "creationDate": "monday 08 APril 2018",
+                    "lastUpdateBy": "ahmed magdy",
+                    "codeDetails": "ahmed magdy",
+                    "lastRunCount": "3254",
+                    "running": true,
+                    "runningValue": 75
+                  }
                 }
               ],
               "collapsedIcon": "icon-layer",

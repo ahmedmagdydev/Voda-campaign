@@ -1,0 +1,57 @@
+<p-dialog
+  [(visible)]="display"
+  [draggable]="false"
+  [blockScroll]="true"
+  [closable]="false"
+  [appendTo]="body"
+  [style]="{ width: '772px' }"
+>
+  <p-header>
+    <div class="d-flex align-items-center">
+      <span class="icon-info mr-3" style="font-size: 42px;color:#FFB22D"></span>
+      <div>
+        <p class="text-bold">Do you want to save "[33837] Red Segment"</p>
+        <div class="text-light">
+          your changes will be reflected on the following items-
+        </div>
+      </div>
+    </div>
+  </p-header>
+  <p-table
+    class="reflected"
+    [value]="reflected"
+    [scrollable]="true"
+    scrollHeight="260px"
+  >
+    <ng-template pTemplate="header">
+      <tr>
+        <th style="width: 250px;" colspan="2">Type</th>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-reflected>
+      <tr>
+        <td style="width:50px;text-align: center">
+          <span class="reflected-icon {{ reflected.icon }}"></span>
+        </td>
+        <td style="width:200px">{{ reflected.type }}</td>
+        <td>{{ reflected.id }}</td>
+        <td>{{ reflected.name }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+
+  <p-footer>
+    <div class="d-flex justify-content-center">
+      <div class="">
+        <button class="btn btn-secondary px-5" (click)="display = false">
+          cancel
+        </button>
+      </div>
+      <div class="">
+        <button class="btn btn-red px-5">save</button>
+      </div>
+    </div>
+  </p-footer>
+</p-dialog>

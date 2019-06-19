@@ -1,14 +1,14 @@
 <app-header></app-header>
 <div class="d-flex main-content">
-	<app-static-menu></app-static-menu>	
-	<as-split useTransition="true">
-		<as-split-area [size]="22" [visible]="sideMenuVisible" order="1">
-		<app-side-menu ></app-side-menu>
-</as-split-area>
-<as-split-area [size]="78" order="2">
-	<div class="flex-1">
-		<app-main-tabs ></app-main-tabs>
-	</div>
-	</as-split-area>
-	</as-split>
-</div> 
+  <app-static-menu></app-static-menu>
+  <as-split useTransition="true">
+    <as-split-area [size]="22" [visible]="sideMenuVisible" order="1">
+      <app-side-menu></app-side-menu>
+    </as-split-area>
+    <as-split-area [size]="78" order="2">
+      <div class="flex-1">
+        <app-main-tabs></app-main-tabs>
+      </div>
+    </as-split-area>
+  </as-split>
+</div>

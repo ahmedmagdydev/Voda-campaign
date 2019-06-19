@@ -1,0 +1,13 @@
+.reflected /deep/ td,
+.reflected /deep/ th {
+  border: 0 !important;
+}
+
+.reflected /deep/ .ui-table-scrollable-view {
+  border: 1px solid #ccc;
+}
+.reflected-icon {
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  padding: 5px;
+}

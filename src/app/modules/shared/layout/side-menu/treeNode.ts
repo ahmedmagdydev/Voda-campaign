@@ -1,18 +1,18 @@
-export interface segmentsNode {
+export interface TreeNode {
   label?: string;
   data?: any;
   icon?: any;
   expandedIcon?: any;
   collapsedIcon?: any;
-  children?: segmentsNode[];
+  children?: TreeNode[];
   leaf?: boolean;
   expanded?: boolean;
   type?: string;
-  parent?: segmentsNode;
   partialSelected?: boolean;
   styleClass?: string;
   draggable?: boolean;
   droppable?: boolean;
   selectable?: boolean;
   key?: string;
+  open?: boolean;
 }

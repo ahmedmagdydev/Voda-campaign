@@ -15,4 +15,8 @@ export interface segmentsNode {
   droppable?: boolean;
   selectable?: boolean;
   key?: string;
+
+  open?: boolean;
+  id?: any;
+  versions?: any;
 }

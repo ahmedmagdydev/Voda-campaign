@@ -158,3 +158,66 @@ color:#fff;
   border-width: 0px 0 0 0;
   padding-left: 100px
 }
+
+
+
+.btn-red {
+    color: #fff;
+    background-color: #F43A3A;
+    border-color: #F43A3A
+}
+
+.btn-red:hover {
+    color: #fff;
+    background-color: #F43A3A;
+    border-color:#F43A3A
+}
+
+.btn-red.focus,.btn-red:focus {
+    box-shadow: 0 0 0 .2rem rgba(130,138,145,.5)
+}
+
+.btn-red.disabled,.btn-red:disabled {
+    color: #fff;
+    background-color: #F43A3A;
+    border-color: #F43A3A
+}
+
+.btn-red:not(:disabled):not(.disabled).active,.btn-red:not(:disabled):not(.disabled):active,.show>.btn-red.dropdown-toggle {
+    color: #fff;
+    background-color: #F43A3A;
+    border-color: #F43A3A
+}
+
+.btn-red:not(:disabled):not(.disabled).active:focus,.btn-red:not(:disabled):not(.disabled):active:focus,.show>.btn-red.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem #F43A3A
+}
+
+body .ui-datepicker{
+  border:0
+}
+.ui-datepicker td>span, .ui-datepicker td>a{
+      width: 52px;
+    height: 52px;
+    display: block;
+    padding-top: 15px !important;
+}
+body .ui-datepicker table td{
+      padding: 0;
+}
+body .ui-datepicker table td > a.ui-state-active, body .ui-datepicker table td > span.ui-state-active,body .ui-datepicker table td.ui-datepicker-today > a.ui-state-active, body .ui-datepicker table td.ui-datepicker-today > span.ui-state-active{
+  background: #F43A3A;
+}
+body .ui-datepicker table td > a.ui-state-active:hover{
+  color:#fff;
+}
+body .ui-dialog .text-light{
+  color:#B4B4B4 !important;
+}
+body .ui-dialog .ui-dialog-titlebar,body .ui-dialog .ui-dialog-footer,body .ui-dialog .ui-dialog-content{
+      border: 0;
+    background-color: #fff
+}
+.btn-block{
+  width: 100% !important;
+}

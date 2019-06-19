@@ -35,10 +35,7 @@ export class TextEditorComponent implements OnInit {
       }
     ];
     this.criteriaValue = this.value;
-    console.log(
-      'TCL: TextEditorComponent -> ngOnInit -> this.value',
-      this.value
-    );
+
     if (this.criteriaValue !== undefined) {
       this.applyHighlights(null, this.criteriaValue);
     }
