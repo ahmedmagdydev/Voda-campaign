@@ -10,7 +10,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "hmr": "ng serve --configuration hmr --open",
-    "postinstall": "ng build --aot -prod",
     "heroku-postbuild": "ng build --prod"
   },
   "repository": {

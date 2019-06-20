@@ -40,7 +40,7 @@ export class TextEditorComponent implements OnInit {
       this.applyHighlights(null, this.criteriaValue);
     }
   }
-  openCm(e, criteriaContextMenu, text) {
+  openCm(e, criteriaContextMenu) {
     if (e.code === 'Space' && e.ctrlKey) {
       criteriaContextMenu.show(e);
     }

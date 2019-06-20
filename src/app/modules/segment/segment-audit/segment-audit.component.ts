@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Car } from '../../../domain/car';
-import { auditService } from '../../../services/audit-service'
+import { auditService } from '../../../services/audit-service';
 import { from } from 'rxjs';
 import { SelectItem } from 'primeng/api';
 @Component({
@@ -9,7 +9,7 @@ import { SelectItem } from 'primeng/api';
   styleUrls: ['./segment-audit.component.css']
 })
 export class SegmentAuditComponent implements OnInit {
-
+  selectedCity;
   cars: Car[];
 
   cols: any[];
@@ -17,8 +17,8 @@ export class SegmentAuditComponent implements OnInit {
   brands: SelectItem[];
 
   colors: SelectItem[];
-  
-  status:SelectItem[];
+
+  status: SelectItem[];
 
   yearFilter: number;
 
@@ -28,66 +28,65 @@ export class SegmentAuditComponent implements OnInit {
 
   cities;
 
-  constructor( private auditService: auditService ) { }
+  constructor(private auditService: auditService) {}
 
   ngOnInit() {
     this.cities = [
-        {name: 'New York', code: 'NY'},
-        {name: 'Rome', code: 'RM'},
-        {name: 'London', code: 'LDN'},
-        {name: 'Istanbul', code: 'IST'},
-        {name: 'Paris', code: 'PRS'}
+      { name: 'New York', code: 'NY' },
+      { name: 'Rome', code: 'RM' },
+      { name: 'London', code: 'LDN' },
+      { name: 'Istanbul', code: 'IST' },
+      { name: 'Paris', code: 'PRS' }
     ];
-    this.auditService.getCarsSmall().then(cars => this.cars = cars);
+    this.auditService.getCarsSmall().then(cars => (this.cars = cars));
 
-        this.brands = [
-            { label: 'All Brands', value: null },
-            { label: 'Audi', value: 'Audi' },
-            { label: 'BMW', value: 'BMW' },
-            { label: 'Fiat', value: 'Fiat' },
-            { label: 'Honda', value: 'Honda' },
-            { label: 'Jaguar', value: 'Jaguar' },
-            { label: 'Mercedes', value: 'Mercedes' },
-            { label: 'Renault', value: 'Renault' },
-            { label: 'VW', value: 'VW' },
-            { label: 'Volvo', value: 'Volvo' }
-        ];
+    this.brands = [
+      { label: 'All Brands', value: null },
+      { label: 'Audi', value: 'Audi' },
+      { label: 'BMW', value: 'BMW' },
+      { label: 'Fiat', value: 'Fiat' },
+      { label: 'Honda', value: 'Honda' },
+      { label: 'Jaguar', value: 'Jaguar' },
+      { label: 'Mercedes', value: 'Mercedes' },
+      { label: 'Renault', value: 'Renault' },
+      { label: 'VW', value: 'VW' },
+      { label: 'Volvo', value: 'Volvo' }
+    ];
 
-        this.colors = [
-            { label: 'White', value: 'White' },
-            { label: 'Green', value: 'Green' },
-            { label: 'Silver', value: 'Silver' },
-            { label: 'Black', value: 'Black' },
-            { label: 'Red', value: 'Red' },
-            { label: 'Maroon', value: 'Maroon' },
-            { label: 'Brown', value: 'Brown' },
-            { label: 'Orange', value: 'Orange' },
-            { label: 'Blue', value: 'Blue' }
-        ];
-        
-        this.status = [
-            { label: 'Started', value: 'Started' },
-            { label: 'Error', value: 'Error' },
-            { label: 'Completed', value: 'Completed' },
-            { label: 'Aborted', value: 'Aborted' }
-        ];
+    this.colors = [
+      { label: 'White', value: 'White' },
+      { label: 'Green', value: 'Green' },
+      { label: 'Silver', value: 'Silver' },
+      { label: 'Black', value: 'Black' },
+      { label: 'Red', value: 'Red' },
+      { label: 'Maroon', value: 'Maroon' },
+      { label: 'Brown', value: 'Brown' },
+      { label: 'Orange', value: 'Orange' },
+      { label: 'Blue', value: 'Blue' }
+    ];
 
-        this.cols = [
-            { field: 'status', header: 'Status' },
-            { field: 'year', header: 'Date' },
-            { field: 'brand', header: 'Time ' },
-            { field: 'color', header: 'Text' }
-        ];
-    }
+    this.status = [
+      { label: 'Started', value: 'Started' },
+      { label: 'Error', value: 'Error' },
+      { label: 'Completed', value: 'Completed' },
+      { label: 'Aborted', value: 'Aborted' }
+    ];
 
-//     onYearChange(event, dt) {
-//         if (this.yearTimeout) {
-//             clearTimeout(this.yearTimeout);
-//         }
+    this.cols = [
+      { field: 'status', header: 'Status' },
+      { field: 'year', header: 'Date' },
+      { field: 'brand', header: 'Time ' },
+      { field: 'color', header: 'Text' }
+    ];
+  }
 
-//         this.yearTimeout = setTimeout(() => {
-//             dt.filter(event.value, 'year', 'gt');
-//         }, 250);
-//   }
+  //     onYearChange(event, dt) {
+  //         if (this.yearTimeout) {
+  //             clearTimeout(this.yearTimeout);
+  //         }
 
+  //         this.yearTimeout = setTimeout(() => {
+  //             dt.filter(event.value, 'year', 'gt');
+  //         }, 250);
+  //   }
 }
