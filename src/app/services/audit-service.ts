@@ -4,13 +4,15 @@ import { Car } from '../domain/car';
 
 @Injectable()
 export class auditService {
+  constructor(private http: HttpClient) {}
 
-    constructor(private http: HttpClient) {}
-
-    getCarsSmall() {
-        return this.http.get<any>('assets/data/cars-small.json')
-            .toPromise()
-            .then(res => <Car[]> res.data)
-            .then(data => { return  data}) 
-    }
+  getCarsSmall() {
+    return this.http
+      .get<any>('assets/data/cars-small.json')
+      .toPromise()
+      .then(res => <Car[]>res.data)
+      .then(data => {
+        return data;
+      });
+  }
 }
