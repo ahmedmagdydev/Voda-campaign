@@ -13,7 +13,7 @@ export class SaveModalComponent implements OnInit {
   reflected;
   cols;
   constructor(private saveModalService: SaveModalService) {}
-  hideModal(e) {
+  hideModal() {
     this.display = false;
     this.onModalClosed.emit();
   }

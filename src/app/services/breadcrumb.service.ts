@@ -8,4 +8,8 @@ export class BreadcrumbService {
     this.breadcrumb.emit(x.breadcrumb);
     this.versions.emit(x.versions);
   }
+  removeBreadcrumb() {
+    this.breadcrumb.emit(null);
+    this.versions.emit(null);
+  }
 }

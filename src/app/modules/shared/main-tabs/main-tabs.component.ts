@@ -28,7 +28,9 @@ export class MainTabsComponent implements OnInit {
     this.segments[e.index].details.saveModal = false;
     this.segments.splice(e.index, 1);
     this.segmentsMenuArray.splice(e.index, 1);
-    if (e.index === this.selectedTab) {
+    if (this.segments.length === 0) {
+      this.breadcrumbService.removeBreadcrumb();
+    } else if (e.index === this.selectedTab) {
       this.breadcrumbService.changeBreadcrumb(this.segments[0]);
       this.selectedTab = 0;
     } else if (e.index < this.selectedTab) {
