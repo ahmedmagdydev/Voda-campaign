@@ -1,8 +1,11 @@
 p-breadcrumb /deep/ .pi-chevron-right:before {
-    content: "/";
+  content: '/';
 }
 
-/deep/ body .ui-breadcrumb{
-	background-color: transparent;
-	border: 0;
+/deep/ body .ui-breadcrumb {
+  background-color: transparent;
+  border: 0;
+}
+/deep/ body .ui-breadcrumb ul li .ui-menuitem-link {
+  color: #646464;
 }

@@ -1,9 +1,7 @@
 <p-dialog
   [(visible)]="display"
-  [draggable]="false"
-  [blockScroll]="true"
   [closable]="false"
-  appendTo="body"
+  [appendTo]="append"
   [style]="{ width: '772px' }"
 >
   <p-header>
@@ -45,7 +43,7 @@
   <p-footer>
     <div class="d-flex justify-content-center">
       <div class="">
-        <button class="btn btn-secondary px-5" (click)="display = false">
+        <button class="btn btn-secondary px-5" (click)="hideModal()">
           cancel
         </button>
       </div>

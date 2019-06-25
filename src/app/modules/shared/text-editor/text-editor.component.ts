@@ -7,7 +7,7 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./text-editor.component.css']
 })
 export class TextEditorComponent implements OnInit {
-  private items: MenuItem[];
+  public items: MenuItem[];
   contextMenu = true;
   @ViewChild('criteria') criteriaRef: ElementRef;
   @ViewChild('highlights') highlightsRef: ElementRef;

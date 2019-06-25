@@ -10,7 +10,7 @@
   border: 1px solid #c8c8c8;
 }
 /deep/ .ui-tabview {
-  margin-top: 14px;
+  margin-top: 4px;
 }
 /deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active,
 /deep/
@@ -89,7 +89,7 @@
 /deep/ body .ui-tabview.ui-tabview-top .ui-tabview-nav {
   overflow-x: auto;
   overflow-y: hidden;
-  margin-right: 33px;
+  margin-right: 45px;
 }
 .tabs-container {
   position: relative;
@@ -98,4 +98,10 @@
   position: absolute;
   right: 10px;
   top: 20px;
+  width: 38px;
+  text-align: center;
+}
+/deep/ .ui-tabview-close {
+  color: #646464;
+  font-size: 14px;
 }

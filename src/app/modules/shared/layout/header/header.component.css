@@ -1,25 +1,28 @@
-/deep/ body. /deep/ body .ui-widget{
-	font-family: 'Roboto', sans-serif;
+/deep/ body. /deep/ body .ui-widget {
+  font-family: 'Roboto', sans-serif;
 }
-header{
-	padding: 10px;
-	box-shadow: 0 1px 4px rgba(29, 32, 35, 0.09);
-	height: 60px;
+header {
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(29, 32, 35, 0.09);
+  height: 60px;
 }
-.icon-menu{
-	font-size: 24px;
-	padding: 0 18px;
+.icon-menu {
+  font-size: 20px;
+  padding: 0 18px;
+  color: #aaaaaa;
+  cursor: pointer;
 }
-.logo{
-	font-weight: 700;
+.logo {
+  font-weight: 700;
 }
-.logo h1{
-	font-size: 18px;
-	padding: 0 11px;margin: 0;
+.logo h1 {
+  font-size: 18px;
+  padding: 0 11px;
+  margin: 0;
 }
-.icon-vodafone{
-	font-size: 32px;
+.icon-vodafone {
+  font-size: 32px;
 }
-.icon-search{
-	font-size: 18px;
+.icon-search {
+  font-size: 18px;
 }

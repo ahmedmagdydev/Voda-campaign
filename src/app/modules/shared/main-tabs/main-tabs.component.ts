@@ -11,23 +11,25 @@ export class MainTabsComponent implements OnInit {
   // tslint:disable: indent
   @Output() segments = [];
   @Output() details;
+  // @Output() saveModal;
   segmentsMenuArray = [];
   selectedTab = 0;
   selectedTabMenu: string;
   // tslint:disable-next-line: no-shadowed-variable
   constructor(
-    private SideMenuService: SideMenuService,
-    private BreadcrumbService: BreadcrumbService
+    private sideMenuService: SideMenuService,
+    private breadcrumbService: BreadcrumbService
   ) {}
   onTabChange(e: any) {
-    this.BreadcrumbService.changeBreadcrumb(this.segments[e.index]);
+    this.breadcrumbService.changeBreadcrumb(this.segments[e.index]);
     this.selectedTab = e.index;
   }
   handleClose(e: any) {
+    this.segments[e.index].details.saveModal = false;
     this.segments.splice(e.index, 1);
     this.segmentsMenuArray.splice(e.index, 1);
     if (e.index === this.selectedTab) {
-      this.BreadcrumbService.changeBreadcrumb(this.segments[0]);
+      this.breadcrumbService.changeBreadcrumb(this.segments[0]);
       this.selectedTab = 0;
     } else if (e.index < this.selectedTab) {
       this.selectedTab = this.selectedTab - 1;
@@ -42,13 +44,13 @@ export class MainTabsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.SideMenuService.segment.subscribe((segment: any) => {
+    this.sideMenuService.segment.subscribe((segment: any) => {
       const resultObject = this.search(segment.id, this.segments);
       if (resultObject === undefined) {
         this.segments.push(segment);
         const segmentItem = {
           label: segment.label,
-          command: event => {
+          command: () => {
             this.selectedTab = this.segments.indexOf(segment);
           }
         };

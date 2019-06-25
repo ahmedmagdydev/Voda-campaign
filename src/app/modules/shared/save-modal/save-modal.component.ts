@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { SaveModalService } from '../../../services/saveModal.service';
 @Component({
   selector: 'app-save-modal',
   templateUrl: './save-modal.component.html',
@@ -7,10 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SaveModalComponent implements OnInit {
   @Input() display = false;
+  @Input() append;
+  // tslint:disable-next-line: no-output-on-prefix
+  @Output() onModalClosed: EventEmitter<boolean> = new EventEmitter();
   reflected;
   cols;
-  constructor() {}
-
+  constructor(private saveModalService: SaveModalService) {}
+  hideModal(e) {
+    this.display = false;
+    this.onModalClosed.emit();
+  }
   ngOnInit() {
     this.reflected = [
       { type: 'Segment', icon: 'icon-layer', id: 3354, name: 'flex october' },

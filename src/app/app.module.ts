@@ -10,7 +10,7 @@ import { SideMenuService } from './services/sidemenu.service';
 import { BreadcrumbService } from './services/breadcrumb.service';
 import { AppComponent } from './app.component';
 import { AngularSplitModule } from 'angular-split';
-
+import { SaveModalService } from './services/saveModal.service';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -22,7 +22,12 @@ import { AngularSplitModule } from 'angular-split';
     MainTabsModule,
     AngularSplitModule.forRoot()
   ],
-  providers: [segmentsService, SideMenuService, BreadcrumbService],
+  providers: [
+    segmentsService,
+    SideMenuService,
+    BreadcrumbService,
+    SaveModalService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

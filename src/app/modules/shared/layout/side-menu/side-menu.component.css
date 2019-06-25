@@ -39,7 +39,7 @@
 
 .topNavigation > li > a {
   width: 100%;
-  padding: 5px 5px 5px 14px;
+  padding: 5px 5px 5px 25px;
   color: #000;
 }
 .topNavigation > li > a > span {
@@ -73,3 +73,16 @@
   overflow-x: visible;
   overflow-y: visible;
 } */
+
+/deep/ .ui-treenode-content[aria-expanded='true'] > .ui-treenode-label {
+  font-weight: bold;
+}
+
+span.icon-arrow_back {
+  position: relative;
+  right: 9px;
+}
+/deep/ .ui-inputtext.ui-tree-filter {
+  border: 1px solid #dde1e8;
+  padding-left: 16px !important;
+}

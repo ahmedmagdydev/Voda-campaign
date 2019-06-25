@@ -1,5 +1,13 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  ViewChild,
+  ElementRef
+} from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { SaveModalService } from '../../services/saveModal.service';
 
 @Component({
   selector: 'app-segment',
@@ -8,14 +16,24 @@ import { MenuItem } from 'primeng/api';
 })
 export class SegmentComponent implements OnInit {
   @Input() type: any;
-  @Input() details;
-  @Output() segmentDetails;
-  segmentTab;
+  @Input() details: any;
+  @Output() segmentDetails: any;
+  segmentTab: string;
   moreActions: MenuItem[];
-  saveModal = false;
-  constructor() {}
+  // @Input() saveModal;
+  @ViewChild('segmentTabs') segmentTabsRef: ElementRef;
+  constructor(private saveModalService: SaveModalService) {}
 
+  openSaveModal() {
+    this.details.saveModal = true;
+  }
   ngOnInit() {
+    // this.saveModalService.change.subscribe((isOpen: boolean) => {
+    //   this.details.saveModal = isOpen;
+    // });
+    // console.log(this.segmentTabsRef.nativeElement.attr('style','height:200px'));
+    this.segmentTabsRef.nativeElement.style.height =
+      window.innerHeight - 218 + 'px';
     this.segmentTab = 'segmentDetails';
     this.moreActions = [
       { label: 'save', icon: 'icon-save' },
