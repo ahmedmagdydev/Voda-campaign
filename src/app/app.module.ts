@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LayoutModule } from './modules/shared/layout/layout.module';
 import { MainTabsModule } from './modules/shared/main-tabs/main-tabs.module';
-import { segmentsService } from './services/segmentsService';
+import { SegmentsService } from './services/segmentsService';
 import { SideMenuService } from './services/sidemenu.service';
 import { BreadcrumbService } from './services/breadcrumb.service';
 import { AppComponent } from './app.component';
@@ -23,7 +23,7 @@ import { SaveModalService } from './services/saveModal.service';
     AngularSplitModule.forRoot()
   ],
   providers: [
-    segmentsService,
+    SegmentsService,
     SideMenuService,
     BreadcrumbService,
     SaveModalService

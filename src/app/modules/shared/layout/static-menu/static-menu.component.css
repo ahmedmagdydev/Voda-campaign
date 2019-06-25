@@ -1,28 +1,28 @@
 .static-menu {
-    background-color: #1d2023;
-    height: 100%;
-    width: 70px;
-    font-size: 18px;
-    padding-top: 10px;
+  background-color: #1d2023;
+  height: 100%;
+  width: 70px;
+  font-size: 18px;
+  padding-top: 10px;
 }
 
-.static-menu .d-flex>div {
-    padding: 11px 0px 8px;
-    transition: all .2s linear;
+.static-menu .d-flex > div {
+  padding: 11px 0px 8px;
+  transition: all 0.2s linear;
 }
 
-.static-menu .d-flex>div.active {
-    background-color: #F43A3A;
+.static-menu .d-flex > div.active {
+  background-color: #f43a3a;
 }
 
-.static-menu .d-flex>div>a {
-    color: #fff;
-    display: block;
+.static-menu .d-flex > div > a {
+  color: #fff;
+  display: block;
+  height: 27px;
 }
-.static-menu .d-flex>div:not(.active):hover{
-    background-color: rgba(244, 58, 58, 0.582);
+.static-menu .d-flex > div:not(.active):hover {
+  background-color: rgba(244, 58, 58, 0.582);
 }
-.static-menu .d-flex>div>a:not(.active):hover {
-    text-decoration: none;
-    
+.static-menu .d-flex > div > a:not(.active):hover {
+  text-decoration: none;
 }

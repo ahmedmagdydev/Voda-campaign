@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TreeNode } from 'primeng/api';
-import { segmentsService } from '../../../../services/segmentsService';
+import { SegmentsService } from '../../../../services/segmentsService';
 import { SideMenuService } from '../../../../services/sidemenu.service';
 
 @Component({
@@ -19,7 +19,7 @@ export class SideMenuComponent implements OnInit {
   custom: boolean;
   constructor(
     // tslint:disable-next-line: no-shadowed-variable
-    private segmentsService: segmentsService,
+    private segmentsService: SegmentsService,
     private sideMenuService: SideMenuService
   ) {}
 
@@ -40,9 +40,13 @@ export class SideMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.segmentsService
-      .getFiles()
-      .then(segments => (this.segmentsTree = segments));
+    // this.segmentsService
+    //   .getFiles('assets/data/segments.json')
+    //   .then(segments => (this.segmentsTree = segments));
+
+    this.segmentsService.selectedSegments.subscribe(
+      (segmentse: any) => (this.segmentsTree = segmentse)
+    );
     this.collapseSegment = true;
 
     this.segmentContext = [

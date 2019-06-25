@@ -1,791 +1,341 @@
-[
-  {
-    "name": "segments 1",
-    "icon": "icon-layer",
-    "tree": {
-      "context": [
+{
+  "context": [
+    {
+      "icon": "icon-info",
+      "label": "Show Details"
+    },
+    {
+      "icon": "icon-save",
+      "label": "Save"
+    },
+    {
+      "icon": "icon-play",
+      "label": "Execute"
+    },
+    {
+      "icon": "icon-resume",
+      "label": "Resume"
+    },
+    {
+      "icon": "",
+      "label": "Scheduling Execution",
+      "items": [
         {
-          "icon": "icon-info",
-          "label": "Show Details"
+          "label": "Specific Date & Time..."
         },
         {
-          "icon": "icon-save",
-          "label": "Save"
+          "label": "Custom Recurrence..."
         },
         {
-          "icon": "icon-play",
-          "label": "Execute"
-        },
-        {
-          "icon": "icon-resume",
-          "label": "Resume"
-        },
-        {
-          "icon": "",
-          "label": "Scheduling Execution",
-          "items": [
-            {
-              "label": "Specific Date & Time..."
-            },
-            {
-              "label": "Custom Recurrence..."
-            },
-            {
-              "label": "Periodic Recurrence..."
-            }
-          ]
-        },
-        {
-          "icon": "icon-stop",
-          "label": "Stop"
-        },
-        {
-          "icon": "icon-copy",
-          "label": "Copy"
-        },
-        {
-          "icon": "icon-delete",
-          "label": "Delete"
-        }
-      ],
-      "data": [
-        {
-          "children": [
-            {
-              "children": [
-                {
-                  "data": "Red Semgnents v01",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v01",
-                  "selectable": true,
-                  "id": 5,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  },
-                  "versions": [
-                    {
-                      "label": "v1"
-                    },
-                    {
-                      "label": "v2"
-                    }
-                  ]
-                },
-                {
-                  "data": "Red Semgnents v02",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v02",
-                  "selectable": true,
-                  "id": 1,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                }
-              ],
-              "collapsedIcon": "icon-layer",
-              "data": "Red Semgnents",
-              "expandedIcon": "icon-layer",
-              "label": "Red Semgnents"
-            },
-            {
-              "children": [
-                {
-                  "data": "Invoices for this month",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Invoices",
-                  "selectable": true,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                }
-              ],
-              "collapsedIcon": "icon-layer",
-              "data": "Home Folder",
-              "expandedIcon": "icon-layer",
-              "label": "Home"
-            }
-          ],
-          "collapsedIcon": "icon-layer",
-          "data": "Segmaentation Tree",
-          "expandedIcon": "icon-layer",
-          "label": "Segmaentation Tree"
-        },
-        {
-          "children": [
-            {
-              "data": "Barcelona Photo",
-              "icon": "fa fa-file-image-o",
-              "label": "barcelona.jpg"
-            },
-            {
-              "data": "PrimeFaces Logo",
-              "icon": "fa fa-file-image-o",
-              "label": "logo.jpg"
-            },
-            {
-              "data": "PrimeUI Logo",
-              "icon": "fa fa-file-image-o",
-              "label": "primeui.png"
-            }
-          ],
-          "collapsedIcon": "icon-layer",
-          "data": "Pictures Folder",
-          "expandedIcon": "icon-layer",
-          "label": "Pictures"
-        },
-        {
-          "children": [
-            {
-              "children": [
-                {
-                  "data": "Scarface Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Scarface"
-                },
-                {
-                  "data": "Serpico Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Serpico"
-                }
-              ],
-              "data": "Pacino Movies",
-              "label": "Al Pacino"
-            },
-            {
-              "children": [
-                {
-                  "data": "Goodfellas Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Goodfellas"
-                },
-                {
-                  "data": "Untouchables Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Untouchables"
-                }
-              ],
-              "data": "De Niro Movies",
-              "label": "Robert De Niro"
-            }
-          ],
-          "collapsedIcon": "icon-layer",
-          "data": "Movies Folder",
-          "expandedIcon": "icon-layer",
-          "label": "Movies"
+          "label": "Periodic Recurrence..."
         }
       ]
+    },
+    {
+      "icon": "icon-stop",
+      "label": "Stop"
+    },
+    {
+      "icon": "icon-copy",
+      "label": "Copy"
+    },
+    {
+      "icon": "icon-delete",
+      "label": "Delete"
     }
-  },
-  {
-    "name": "segments 2",
-    "icon": "icon-layer",
-    "tree": {
-      "context": [
+  ],
+  "data": [
+    {
+      "children": [
         {
-          "icon": "icon-info",
-          "label": "Show Details"
-        },
-        {
-          "icon": "icon-save",
-          "label": "Save"
-        },
-        {
-          "icon": "icon-play",
-          "label": "Execute"
-        },
-        {
-          "icon": "icon-resume",
-          "label": "Resume"
-        },
-        {
-          "icon": "",
-          "label": "Scheduling Execution",
-          "items": [
+          "children": [
             {
-              "label": "Specific Date & Time..."
+              "data": "Red Semgnents v01",
+              "icon": "fa fa-file-word-o",
+              "label": "Red Semgnents v01",
+              "selectable": true,
+              "id": 5,
+              "type": "segment",
+              "details": {
+                "name": "Red Segment",
+                "id": "33887",
+                "version": "6",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": true,
+                "runningValue": 75,
+                "saveModal": false
+              },
+              "versions": [
+                {
+                  "label": "v1"
+                },
+                {
+                  "label": "v2"
+                }
+              ]
             },
             {
-              "label": "Custom Recurrence..."
+              "data": "Red Semgnents v02",
+              "icon": "fa fa-file-word-o",
+              "label": "Red Semgnents v02",
+              "selectable": true,
+              "id": 1,
+              "type": "segment",
+              "details": {
+                "name": "Red Semgnents v02",
+                "id": "32645",
+                "version": "1",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": true,
+                "runningValue": 75,
+                "saveModal": false
+              }
             },
             {
-              "label": "Periodic Recurrence..."
+              "data": "Red Semgnents v03",
+              "icon": "fa fa-file-word-o",
+              "label": "Red Semgnents v03",
+              "selectable": true,
+              "id": 2,
+              "type": "segment",
+              "details": {
+                "name": "Red Semgnents v03",
+                "id": "21",
+                "version": "3",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": true,
+                "runningValue": 75,
+                "saveModal": false
+              }
+            },
+            {
+              "data": "Red Semgnents v04",
+              "icon": "fa fa-file-word-o",
+              "label": "Red Semgnents v04",
+              "selectable": true,
+              "id": 3,
+              "type": "segment",
+              "details": {
+                "name": "Red Semgnents v04",
+                "id": "21",
+                "version": "25",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": true,
+                "runningValue": 75,
+                "saveModal": false
+              }
+            },
+            {
+              "data": "Red Semgnents v05",
+              "icon": "fa fa-file-word-o",
+              "label": "Red Semgnents v05",
+              "selectable": true,
+              "id": 4,
+              "type": "segment",
+              "details": {
+                "name": "Red Semgnents v05",
+                "id": "1344",
+                "version": "1",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": false
+              }
+            },
+            {
+              "data": "Red Semgnents v06",
+              "icon": "fa fa-file-word-o",
+              "label": "Red Semgnents v06",
+              "selectable": true,
+              "id": 6,
+              "type": "segment",
+              "details": {
+                "name": "Red Semgnents v06",
+                "id": "231",
+                "version": "6",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": true,
+                "runningValue": 75,
+                "saveModal": false
+              }
+            },
+            {
+              "data": "Red Semgnents v07",
+              "icon": "fa fa-file-word-o",
+              "label": "Red Semgnents v07",
+              "selectable": true,
+              "id": 7,
+              "type": "segment",
+              "details": {
+                "name": "Red Segment",
+                "id": "33887",
+                "version": "6",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": true,
+                "runningValue": 75,
+                "saveModal": false
+              }
             }
-          ]
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Red Semgnents",
+          "expandedIcon": "icon-layer",
+          "label": "Red Semgnents"
         },
         {
-          "icon": "icon-stop",
-          "label": "Stop"
-        },
-        {
-          "icon": "icon-copy",
-          "label": "Copy"
-        },
-        {
-          "icon": "icon-delete",
-          "label": "Delete"
+          "children": [
+            {
+              "data": "Invoices for this month",
+              "icon": "fa fa-file-word-o",
+              "label": "Invoices",
+              "selectable": true,
+              "type": "segment",
+              "details": {
+                "name": "Red Segment",
+                "id": "33887",
+                "version": "6",
+                "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
+                "lastRunBy": "Ahmed Magdy",
+                "lastRunDate": "monday 08 APril 2018",
+                "lastUpdateDate": "monday 08 APril 2018",
+                "createdBy": "ahmed magdy",
+                "creationDate": "monday 08 APril 2018",
+                "lastUpdateBy": "ahmed magdy",
+                "codeDetails": "ahmed magdy",
+                "lastRunCount": "3254",
+                "running": true,
+                "runningValue": 75,
+                "saveModal": false
+              }
+            }
+          ],
+          "collapsedIcon": "icon-layer",
+          "data": "Home Folder",
+          "expandedIcon": "icon-layer",
+          "label": "Home"
         }
       ],
-      "data": [
+      "collapsedIcon": "icon-layer",
+      "data": "Segmaentation Tree",
+      "expandedIcon": "icon-layer",
+      "label": "Segmaentation Tree"
+    },
+    {
+      "children": [
         {
-          "children": [
-            {
-              "children": [
-                {
-                  "data": "Red Semgnents v01",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v01",
-                  "selectable": true,
-                  "id": 5,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  },
-                  "versions": [
-                    {
-                      "label": "v1"
-                    },
-                    {
-                      "label": "v2"
-                    }
-                  ]
-                },
-                {
-                  "data": "Red Semgnents v02",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v02",
-                  "selectable": true,
-                  "id": 1,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Semgnents v02",
-                    "id": "32645",
-                    "version": "1",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                },
-                {
-                  "data": "Red Semgnents v03",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v03",
-                  "selectable": true,
-                  "id": 2,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Semgnents v03",
-                    "id": "21",
-                    "version": "3",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                },
-                {
-                  "data": "Red Semgnents v04",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v04",
-                  "selectable": true,
-                  "id": 3,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Semgnents v04",
-                    "id": "21",
-                    "version": "25",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                },
-                {
-                  "data": "Red Semgnents v05",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v05",
-                  "selectable": true,
-                  "id": 4,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Semgnents v05",
-                    "id": "1344",
-                    "version": "1",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": false
-                  }
-                },
-                {
-                  "data": "Red Semgnents v06",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v06",
-                  "selectable": true,
-                  "id": 6,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Semgnents v06",
-                    "id": "231",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                },
-                {
-                  "data": "Red Semgnents v07",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v07",
-                  "selectable": true,
-                  "id": 7,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                }
-              ],
-              "collapsedIcon": "icon-layer",
-              "data": "Red Semgnents",
-              "expandedIcon": "icon-layer",
-              "label": "Red Semgnents"
-            },
-            {
-              "children": [
-                {
-                  "data": "Invoices for this month",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Invoices",
-                  "selectable": true,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                }
-              ],
-              "collapsedIcon": "icon-layer",
-              "data": "Home Folder",
-              "expandedIcon": "icon-layer",
-              "label": "Home"
-            }
-          ],
-          "collapsedIcon": "icon-layer",
-          "data": "Segmaentation Tree",
-          "expandedIcon": "icon-layer",
-          "label": "Segmaentation Tree"
+          "data": "Barcelona Photo",
+          "icon": "fa fa-file-image-o",
+          "label": "barcelona.jpg"
         },
         {
-          "children": [
-            {
-              "data": "Barcelona Photo",
-              "icon": "fa fa-file-image-o",
-              "label": "barcelona.jpg"
-            },
-            {
-              "data": "PrimeFaces Logo",
-              "icon": "fa fa-file-image-o",
-              "label": "logo.jpg"
-            },
-            {
-              "data": "PrimeUI Logo",
-              "icon": "fa fa-file-image-o",
-              "label": "primeui.png"
-            }
-          ],
-          "collapsedIcon": "icon-layer",
-          "data": "Pictures Folder",
-          "expandedIcon": "icon-layer",
-          "label": "Pictures"
+          "data": "PrimeFaces Logo",
+          "icon": "fa fa-file-image-o",
+          "label": "logo.jpg"
         },
         {
-          "children": [
-            {
-              "children": [
-                {
-                  "data": "Scarface Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Scarface"
-                },
-                {
-                  "data": "Serpico Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Serpico"
-                }
-              ],
-              "data": "Pacino Movies",
-              "label": "Al Pacino"
-            },
-            {
-              "children": [
-                {
-                  "data": "Goodfellas Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Goodfellas"
-                },
-                {
-                  "data": "Untouchables Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Untouchables"
-                }
-              ],
-              "data": "De Niro Movies",
-              "label": "Robert De Niro"
-            }
-          ],
-          "collapsedIcon": "icon-layer",
-          "data": "Movies Folder",
-          "expandedIcon": "icon-layer",
-          "label": "Movies"
-        }
-      ]
-    }
-  },
-  {
-    "name": "segments 3",
-    "icon": "icon-layer",
-    "tree": {
-      "context": [
-        {
-          "icon": "icon-info",
-          "label": "Show Details"
-        },
-        {
-          "icon": "icon-save",
-          "label": "Save"
-        },
-        {
-          "icon": "icon-play",
-          "label": "Execute"
-        },
-        {
-          "icon": "icon-resume",
-          "label": "Resume"
-        },
-        {
-          "icon": "",
-          "label": "Scheduling Execution",
-          "items": [
-            {
-              "label": "Specific Date & Time..."
-            },
-            {
-              "label": "Custom Recurrence..."
-            },
-            {
-              "label": "Periodic Recurrence..."
-            }
-          ]
-        },
-        {
-          "icon": "icon-stop",
-          "label": "Stop"
-        },
-        {
-          "icon": "icon-copy",
-          "label": "Copy"
-        },
-        {
-          "icon": "icon-delete",
-          "label": "Delete"
+          "data": "PrimeUI Logo",
+          "icon": "fa fa-file-image-o",
+          "label": "primeui.png"
         }
       ],
-      "data": [
+      "collapsedIcon": "icon-layer",
+      "data": "Pictures Folder",
+      "expandedIcon": "icon-layer",
+      "label": "Pictures"
+    },
+    {
+      "children": [
         {
           "children": [
             {
-              "children": [
-                {
-                  "data": "Red Semgnents v01",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v01",
-                  "selectable": true,
-                  "id": 5,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  },
-                  "versions": [
-                    {
-                      "label": "v1"
-                    },
-                    {
-                      "label": "v2"
-                    }
-                  ]
-                },
-                {
-                  "data": "Red Semgnents v02",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Red Semgnents v02",
-                  "selectable": true,
-                  "id": 1,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                }
-              ],
-              "collapsedIcon": "icon-layer",
-              "data": "Red Semgnents",
-              "expandedIcon": "icon-layer",
-              "label": "Red Semgnents"
+              "data": "Scarface Movie",
+              "icon": "fa fa-file-video-o",
+              "label": "Scarface"
             },
             {
-              "children": [
-                {
-                  "data": "Invoices for this month",
-                  "icon": "fa fa-file-word-o",
-                  "label": "Invoices",
-                  "selectable": true,
-                  "type": "segment",
-                  "details": {
-                    "name": "Red Segment",
-                    "id": "33887",
-                    "version": "6",
-                    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
-                    "lastRunBy": "Ahmed Magdy",
-                    "lastRunDate": "monday 08 APril 2018",
-                    "lastUpdateDate": "monday 08 APril 2018",
-                    "createdBy": "ahmed magdy",
-                    "creationDate": "monday 08 APril 2018",
-                    "lastUpdateBy": "ahmed magdy",
-                    "codeDetails": "ahmed magdy",
-                    "lastRunCount": "3254",
-                    "running": true,
-                    "runningValue": 75,
-                    "saveModal": false
-                  }
-                }
-              ],
-              "collapsedIcon": "icon-layer",
-              "data": "Home Folder",
-              "expandedIcon": "icon-layer",
-              "label": "Home"
+              "data": "Serpico Movie",
+              "icon": "fa fa-file-video-o",
+              "label": "Serpico"
             }
           ],
-          "collapsedIcon": "icon-layer",
-          "data": "Segmaentation Tree",
-          "expandedIcon": "icon-layer",
-          "label": "Segmaentation Tree"
+          "data": "Pacino Movies",
+          "label": "Al Pacino"
         },
         {
           "children": [
             {
-              "data": "Barcelona Photo",
-              "icon": "fa fa-file-image-o",
-              "label": "barcelona.jpg"
+              "data": "Goodfellas Movie",
+              "icon": "fa fa-file-video-o",
+              "label": "Goodfellas"
             },
             {
-              "data": "PrimeFaces Logo",
-              "icon": "fa fa-file-image-o",
-              "label": "logo.jpg"
-            },
-            {
-              "data": "PrimeUI Logo",
-              "icon": "fa fa-file-image-o",
-              "label": "primeui.png"
+              "data": "Untouchables Movie",
+              "icon": "fa fa-file-video-o",
+              "label": "Untouchables"
             }
           ],
-          "collapsedIcon": "icon-layer",
-          "data": "Pictures Folder",
-          "expandedIcon": "icon-layer",
-          "label": "Pictures"
-        },
-        {
-          "children": [
-            {
-              "children": [
-                {
-                  "data": "Scarface Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Scarface"
-                },
-                {
-                  "data": "Serpico Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Serpico"
-                }
-              ],
-              "data": "Pacino Movies",
-              "label": "Al Pacino"
-            },
-            {
-              "children": [
-                {
-                  "data": "Goodfellas Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Goodfellas"
-                },
-                {
-                  "data": "Untouchables Movie",
-                  "icon": "fa fa-file-video-o",
-                  "label": "Untouchables"
-                }
-              ],
-              "data": "De Niro Movies",
-              "label": "Robert De Niro"
-            }
-          ],
-          "collapsedIcon": "icon-layer",
-          "data": "Movies Folder",
-          "expandedIcon": "icon-layer",
-          "label": "Movies"
+          "data": "De Niro Movies",
+          "label": "Robert De Niro"
         }
-      ]
+      ],
+      "collapsedIcon": "icon-layer",
+      "data": "Movies Folder",
+      "expandedIcon": "icon-layer",
+      "label": "Movies"
     }
-  }
-]
+  ]
+}

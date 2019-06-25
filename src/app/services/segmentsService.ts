@@ -1,16 +1,17 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, Output, EventEmitter } from '@angular/core';
 import { segmentsNode } from '../domain/segmentsNode';
 
 @Injectable()
-export class segmentsService {
-  constructor(private http: HttpClient) {}
+export class SegmentsService {
+  constructor(public http: HttpClient) {}
+  @Output() selectedSegments: EventEmitter<any> = new EventEmitter();
 
-  getFiles() {
+  getFiles(link) {
     // tslint:disable: indent
     return this.http
-      .get<any>('assets/data/segments.json')
+      .get<any>(link)
       .toPromise()
-      .then(res => <segmentsNode[]>res);
+      .then(res => this.selectedSegments.emit(<segmentsNode[]>res));
   }
 }

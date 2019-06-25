@@ -2,11 +2,13 @@
   <div class="d-flex flex-column text-center">
     <div
       *ngFor="let item of items; let i = index"
-      [ngClass]="{ active: activeItem(i) }"
+      [ngClass]="{ active: item.active }"
       pTooltip="{{ item.title }}"
       tooltipPosition="right"
     >
-      <a href="{{ item.link }}"><span class="{{ item.icon }}"></span></a>
+      <a href="#" (click)="getItems(item.link, i)"
+        ><span class="{{ item.icon }}"></span
+      ></a>
     </div>
   </div>
 </div>

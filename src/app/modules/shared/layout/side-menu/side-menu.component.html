@@ -1,58 +1,27 @@
-<ul
-  class="topNavigation {{
-    collapseSegment ? 'collapseSegment' : segmentExpanded
-  }}"
+<p-tree
+  *ngIf="segmentsTree"
+  [filter]="true"
+  filterPlaceholder="Search in segments"
+  draggableNodes="true"
+  droppableNodes="true"
+  droppableScope="files"
+  draggableScope="server2"
+  [value]="segmentsTree.data"
+  [(selection)]="selectedSegment"
+  (onNodeSelect)="nodeSelected($event, segmentsTree.name)"
+  selectionMode="single"
+  [contextMenu]="cm"
 >
-  <li
-    *ngFor="let segmetTree of segmentsTree"
-    [ngClass]="{
-      'h-100': segmentExpanded == segmetTree.name.split(' ').join('_')
-    }"
-  >
-    <a
-      href="#"
-      class="d-flex align-items-center"
-      (click)="expandSegment($event, segmetTree.name)"
-      *ngIf="
-        collapseSegment ||
-        segmentExpanded == segmetTree.name.split(' ').join('_')
-      "
-    >
-      <span
-        class="{{
-          !collapseSegment ? 'icon-arrow_back' : segmetTree.icon + ' mr-2'
-        }}"
-      ></span>
-      {{ segmetTree.name }}</a
-    >
-    <p-tree
-      [filter]="true"
-      filterPlaceholder="Search in segments"
-      *ngIf="
-        collapseSegment ||
-        segmentExpanded == segmetTree.name.split(' ').join('_')
-      "
-      draggableNodes="true"
-      droppableNodes="true"
-      droppableScope="files"
-      draggableScope="server2"
-      [value]="segmetTree.tree.data"
-      [(selection)]="selectedSegment"
-      (onNodeSelect)="nodeSelected($event, segmetTree.name)"
-      selectionMode="single"
-      [contextMenu]="cm"
-    >
-      <ng-template let-node pTemplate="default">
-        <span>{{ node.label }}</span>
-      </ng-template>
-      <ng-template let-node pTemplate="node">
-        <span pDraggable="dd" (onDragStart)="dragStart($event, node)">{{
-          node.label
-        }}</span>
-      </ng-template>
-    </p-tree>
-  </li>
-</ul>
+  <ng-template let-node pTemplate="default">
+    <span>{{ node.label }}</span>
+  </ng-template>
+  <ng-template let-node pTemplate="node">
+    <span pDraggable="dd" (onDragStart)="dragStart($event, node)">{{
+      node.label
+    }}</span>
+  </ng-template>
+</p-tree>
+
 <p-contextMenu #cm [model]="segmentContext" appendTo="body"></p-contextMenu>
 <p-dialog
   [(visible)]="specific"
