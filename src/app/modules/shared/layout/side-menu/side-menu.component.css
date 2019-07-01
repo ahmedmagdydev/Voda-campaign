@@ -86,3 +86,11 @@ span.icon-arrow_back {
   border: 1px solid #dde1e8;
   padding-left: 16px !important;
 }
+
+/deep/ .node-content-wrapper-active,
+/deep/ .node-content-wrapper.node-content-wrapper-active:hover,
+/deep/ .node-content-wrapper-active.node-content-wrapper-focused {
+  background: transparent;
+  box-shadow: none;
+  font-weight: bold;
+}

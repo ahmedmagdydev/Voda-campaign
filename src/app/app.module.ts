@@ -11,6 +11,8 @@ import { BreadcrumbService } from './services/breadcrumb.service';
 import { AppComponent } from './app.component';
 import { AngularSplitModule } from 'angular-split';
 import { SaveModalService } from './services/saveModal.service';
+import { DragDropService } from './services/dragDrop.service';
+import { TextEditorService } from './services/textEditor.service';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -26,7 +28,9 @@ import { SaveModalService } from './services/saveModal.service';
     SegmentsService,
     SideMenuService,
     BreadcrumbService,
-    SaveModalService
+    SaveModalService,
+    DragDropService,
+    TextEditorService
   ],
   bootstrap: [AppComponent]
 })

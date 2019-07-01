@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-
 @Component({
   selector: 'app-text-editor',
   templateUrl: './text-editor.component.html',
@@ -17,6 +16,7 @@ export class TextEditorComponent implements OnInit {
   @Input() disabled: any;
   backdrop: any;
   criteriaValue;
+  dropItem;
   constructor() {}
 
   ngOnInit() {
@@ -24,13 +24,13 @@ export class TextEditorComponent implements OnInit {
       {
         label: 'AND',
         command: event => {
-          this.paste({ e: event, criteria: this.criteriaRef });
+          this.paste({ e: event.item.label, criteria: this.criteriaRef });
         }
       },
       {
         label: 'OR',
         command: event => {
-          this.paste({ e: event, criteria: this.criteriaRef });
+          this.paste({ e: event.item.label, criteria: this.criteriaRef });
         }
       }
     ];
@@ -59,19 +59,9 @@ export class TextEditorComponent implements OnInit {
     const scroll = e.target.scrollTop;
     this.backdropRef.nativeElement.scrollTop = scroll;
   }
-  paste({
-    e,
-    criteria
-  }: {
-    e: {
-      item: {
-        label: any;
-      };
-    };
-    criteria: ElementRef<any>;
-  }) {
+  paste({ e, criteria }: { e: any; criteria: ElementRef<any> }) {
     const currentCriteria = criteria.nativeElement;
-    const pasteVlaue = e.item.label;
+    const pasteVlaue = e;
     // criteria.nativeElement.value += e.item.label;
     criteria.nativeElement.focus();
     if (

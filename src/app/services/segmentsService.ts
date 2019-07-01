@@ -7,8 +7,7 @@ export class SegmentsService {
   constructor(public http: HttpClient) {}
   @Output() selectedSegments: EventEmitter<any> = new EventEmitter();
 
-  getFiles(link) {
-    // tslint:disable: indent
+  getFiles(link: string) {
     return this.http
       .get<any>(link)
       .toPromise()

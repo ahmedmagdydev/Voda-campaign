@@ -3,13 +3,14 @@
     <p-tabPanel
       [closable]="true"
       [leftIcon]="segment.icon"
-      [header]="segment.label"
+      [header]="segment.name"
       *ngFor="let segment of segments; let i = index"
       [selected]="i == selectedTab"
     >
       <app-segment
         *ngIf="segment.type == 'segment'"
         [details]="segment.details"
+        [config]="segment.config"
       ></app-segment>
     </p-tabPanel>
   </p-tabView>

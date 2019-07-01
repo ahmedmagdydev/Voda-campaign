@@ -1,11 +1,7 @@
-<p-tree
+<!-- <p-tree
   *ngIf="segmentsTree"
   [filter]="true"
   filterPlaceholder="Search in segments"
-  draggableNodes="true"
-  droppableNodes="true"
-  droppableScope="files"
-  draggableScope="server2"
   [value]="segmentsTree.data"
   [(selection)]="selectedSegment"
   (onNodeSelect)="nodeSelected($event, segmentsTree.name)"
@@ -16,12 +12,36 @@
     <span>{{ node.label }}</span>
   </ng-template>
   <ng-template let-node pTemplate="node">
-    <span pDraggable="dd" (onDragStart)="dragStart($event, node)">{{
-      node.label
-    }}</span>
+    <span>{{ node.label }}</span>
   </ng-template>
-</p-tree>
+</p-tree> -->
 
+<div #treeWrapper class="p-4">
+  <tree-root
+    (activate)="onEvent($event)"
+    [nodes]="segmentsTree.data"
+    *ngIf="segmentsTree"
+    [options]="options"
+  >
+    <ng-template #treeNodeTemplate let-node let-index="index">
+      <span class="{{ node.data.icon }} node-icon mr-2"></span
+      ><span>{{ node.data.name }}</span>
+    </ng-template>
+  </tree-root>
+</div>
+<div
+  #dropZone
+  style="
+    position: fixed;
+    width: 500px;
+    height: 100%;
+    top: 150px;
+    right: 0;
+    z-index: 999;
+"
+  [ngStyle]="{ display: dropZoneOn }"
+  (treeDrop)="onDrop($event)"
+></div>
 <p-contextMenu #cm [model]="segmentContext" appendTo="body"></p-contextMenu>
 <p-dialog
   [(visible)]="specific"

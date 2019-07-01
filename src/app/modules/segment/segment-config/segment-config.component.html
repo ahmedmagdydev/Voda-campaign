@@ -1,7 +1,7 @@
 <div class="p-3">
   <p-accordion [multiple]="true">
     <p-accordionTab header="Criteria">
-      <app-text-editor></app-text-editor>
+      <app-text-editor [value]="segmentConfig.criteria"></app-text-editor>
     </p-accordionTab>
     <p-accordionTab header="Stored Fields">
       <table class="table">

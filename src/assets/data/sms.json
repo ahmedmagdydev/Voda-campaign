@@ -2,46 +2,46 @@
     "context": [
         {
             "icon": "icon-info",
-            "label": "Show Details"
+            "name": "Show Details"
         },
         {
             "icon": "icon-save",
-            "label": "Save"
+            "name": "Save"
         },
         {
             "icon": "icon-play",
-            "label": "Execute"
+            "name": "Execute"
         },
         {
             "icon": "icon-resume",
-            "label": "Resume"
+            "name": "Resume"
         },
         {
             "icon": "",
-            "label": "Scheduling Execution",
+            "name": "Scheduling Execution",
             "items": [
                 {
-                    "label": "Specific Date & Time..."
+                    "name": "Specific Date & Time..."
                 },
                 {
-                    "label": "Custom Recurrence..."
+                    "name": "Custom Recurrence..."
                 },
                 {
-                    "label": "Periodic Recurrence..."
+                    "name": "Periodic Recurrence..."
                 }
             ]
         },
         {
             "icon": "icon-stop",
-            "label": "Stop"
+            "name": "Stop"
         },
         {
             "icon": "icon-copy",
-            "label": "Copy"
+            "name": "Copy"
         },
         {
             "icon": "icon-delete",
-            "label": "Delete"
+            "name": "Delete"
         }
     ],
     "data": [
@@ -50,15 +50,15 @@
                 {
                     "children": [
                         {
-                            "data": "SMS v01",
+                            "data": "Red Semgnents v01",
                             "icon": "fa fa-file-word-o",
-                            "label": "SMS v01",
+                            "name": "Red Semgnents v01",
                             "selectable": true,
-                            "id": 2134143,
+                            "id": 5,
                             "type": "segment",
                             "details": {
                                 "name": "Red Segment",
-                                "id": "2141",
+                                "id": "33887",
                                 "version": "6",
                                 "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
                                 "lastRunBy": "Ahmed Magdy",
@@ -73,25 +73,28 @@
                                 "runningValue": 75,
                                 "saveModal": false
                             },
+                            "config": {
+                                "criteria": "ahmed and mohamed or bilal"
+                            },
                             "versions": [
                                 {
-                                    "label": "v1"
+                                    "name": "v1"
                                 },
                                 {
-                                    "label": "v2"
+                                    "name": "v2"
                                 }
                             ]
                         },
                         {
-                            "data": "SMS v02",
+                            "data": "Red Semgnents v02",
                             "icon": "fa fa-file-word-o",
-                            "label": "SMS v02",
+                            "name": "Red Semgnents v02",
                             "selectable": true,
-                            "id": 6435,
+                            "id": 1,
                             "type": "segment",
                             "details": {
-                                "name": "SMS v02",
-                                "id": "3465",
+                                "name": "Red Semgnents v02",
+                                "id": "32645",
                                 "version": "1",
                                 "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
                                 "lastRunBy": "Ahmed Magdy",
@@ -105,18 +108,21 @@
                                 "running": true,
                                 "runningValue": 75,
                                 "saveModal": false
+                            },
+                            "config": {
+                                "criteria": "ahmed and mohamed or bilal"
                             }
                         },
                         {
-                            "data": "SMS v03",
+                            "data": "Red Semgnents v03",
                             "icon": "fa fa-file-word-o",
-                            "label": "SMS v03",
+                            "name": "Red Semgnents v03",
                             "selectable": true,
-                            "id": 123,
+                            "id": 2,
                             "type": "segment",
                             "details": {
-                                "name": "SMS v03",
-                                "id": "6856",
+                                "name": "Red Semgnents v03",
+                                "id": "21",
                                 "version": "3",
                                 "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
                                 "lastRunBy": "Ahmed Magdy",
@@ -130,18 +136,21 @@
                                 "running": true,
                                 "runningValue": 75,
                                 "saveModal": false
+                            },
+                            "config": {
+                                "criteria": "ahmed and mohamed or bilal"
                             }
                         },
                         {
-                            "data": "SMS v04",
+                            "data": "Red Semgnents v04",
                             "icon": "fa fa-file-word-o",
-                            "label": "SMS v04",
+                            "name": "Red Semgnents v04",
                             "selectable": true,
-                            "id": 7567,
+                            "id": 3,
                             "type": "segment",
                             "details": {
-                                "name": "SMS v04",
-                                "id": "7890789",
+                                "name": "Red Semgnents v04",
+                                "id": "21",
                                 "version": "25",
                                 "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
                                 "lastRunBy": "Ahmed Magdy",
@@ -155,18 +164,21 @@
                                 "running": true,
                                 "runningValue": 75,
                                 "saveModal": false
+                            },
+                            "config": {
+                                "criteria": "ahmed and mohamed or bilal"
                             }
                         },
                         {
-                            "data": "SMS v05",
+                            "data": "Red Semgnents v05",
                             "icon": "fa fa-file-word-o",
-                            "label": "SMS v05",
+                            "name": "Red Semgnents v05",
                             "selectable": true,
-                            "id": 12312,
+                            "id": 4,
                             "type": "segment",
                             "details": {
-                                "name": "SMS v05",
-                                "id": "43125",
+                                "name": "Red Semgnents v05",
+                                "id": "1344",
                                 "version": "1",
                                 "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
                                 "lastRunBy": "Ahmed Magdy",
@@ -181,15 +193,15 @@
                             }
                         },
                         {
-                            "data": "SMS v06",
+                            "data": "Red Semgnents v06",
                             "icon": "fa fa-file-word-o",
-                            "label": "SMS v06",
+                            "name": "Red Semgnents v06",
                             "selectable": true,
-                            "id": 125134,
+                            "id": 6,
                             "type": "segment",
                             "details": {
-                                "name": "SMS v06",
-                                "id": "2352467",
+                                "name": "Red Semgnents v06",
+                                "id": "231",
                                 "version": "6",
                                 "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, hic molestias! Dolor numquam accusantium possimus nihil reiciendis et minus alias velit dignissimos. Totam ratione quos temporibus voluptas autem dolorem tempora.",
                                 "lastRunBy": "Ahmed Magdy",
@@ -203,12 +215,15 @@
                                 "running": true,
                                 "runningValue": 75,
                                 "saveModal": false
+                            },
+                            "config": {
+                                "criteria": "ahmed and mohamed or bilal"
                             }
                         },
                         {
-                            "data": "SMS v07",
+                            "data": "Red Semgnents v07",
                             "icon": "fa fa-file-word-o",
-                            "label": "SMS v07",
+                            "name": "Red Semgnents v07",
                             "selectable": true,
                             "id": 7,
                             "type": "segment",
@@ -228,20 +243,23 @@
                                 "running": true,
                                 "runningValue": 75,
                                 "saveModal": false
+                            },
+                            "config": {
+                                "criteria": "ahmed and mohamed or bilal"
                             }
                         }
                     ],
                     "collapsedIcon": "icon-layer",
-                    "data": "SMS",
-                    "expandedIcon": "icon-layer",
-                    "label": "SMS"
+                    "data": "Red Semgnents",
+                    "icon": "icon-layer",
+                    "name": "Red Semgnents"
                 },
                 {
                     "children": [
                         {
                             "data": "Invoices for this month",
                             "icon": "fa fa-file-word-o",
-                            "label": "Invoices",
+                            "name": "Invoices",
                             "selectable": true,
                             "type": "segment",
                             "details": {
@@ -260,42 +278,45 @@
                                 "running": true,
                                 "runningValue": 75,
                                 "saveModal": false
+                            },
+                            "config": {
+                                "criteria": "ahmed and mohamed or bilal"
                             }
                         }
                     ],
                     "collapsedIcon": "icon-layer",
                     "data": "Home Folder",
-                    "expandedIcon": "icon-layer",
-                    "label": "Home"
+                    "icon": "icon-layer",
+                    "name": "Home"
                 }
             ],
             "collapsedIcon": "icon-layer",
-            "data": "SMS Tree",
-            "expandedIcon": "icon-layer",
-            "label": "SMS Tree"
+            "data": "Segmaentation Tree",
+            "icon": "icon-layer",
+            "name": "Segmaentation Tree"
         },
         {
             "children": [
                 {
                     "data": "Barcelona Photo",
                     "icon": "fa fa-file-image-o",
-                    "label": "barcelona.jpg"
+                    "name": "barcelona.jpg"
                 },
                 {
                     "data": "PrimeFaces Logo",
                     "icon": "fa fa-file-image-o",
-                    "label": "logo.jpg"
+                    "name": "logo.jpg"
                 },
                 {
                     "data": "PrimeUI Logo",
                     "icon": "fa fa-file-image-o",
-                    "label": "primeui.png"
+                    "name": "primeui.png"
                 }
             ],
             "collapsedIcon": "icon-layer",
             "data": "Pictures Folder",
-            "expandedIcon": "icon-layer",
-            "label": "Pictures"
+            "icon": "icon-layer",
+            "name": "Pictures"
         },
         {
             "children": [
@@ -304,38 +325,38 @@
                         {
                             "data": "Scarface Movie",
                             "icon": "fa fa-file-video-o",
-                            "label": "Scarface"
+                            "name": "Scarface"
                         },
                         {
                             "data": "Serpico Movie",
                             "icon": "fa fa-file-video-o",
-                            "label": "Serpico"
+                            "name": "Serpico"
                         }
                     ],
                     "data": "Pacino Movies",
-                    "label": "Al Pacino"
+                    "name": "Al Pacino"
                 },
                 {
                     "children": [
                         {
                             "data": "Goodfellas Movie",
                             "icon": "fa fa-file-video-o",
-                            "label": "Goodfellas"
+                            "name": "Goodfellas"
                         },
                         {
                             "data": "Untouchables Movie",
                             "icon": "fa fa-file-video-o",
-                            "label": "Untouchables"
+                            "name": "Untouchables"
                         }
                     ],
                     "data": "De Niro Movies",
-                    "label": "Robert De Niro"
+                    "name": "Robert De Niro"
                 }
             ],
             "collapsedIcon": "icon-layer",
             "data": "Movies Folder",
-            "expandedIcon": "icon-layer",
-            "label": "Movies"
+            "icon": "icon-layer",
+            "name": "Movies"
         }
     ]
 }

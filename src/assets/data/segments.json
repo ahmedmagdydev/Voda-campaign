@@ -2,46 +2,46 @@
   "context": [
     {
       "icon": "icon-info",
-      "label": "Show Details"
+      "name": "Show Details"
     },
     {
       "icon": "icon-save",
-      "label": "Save"
+      "name": "Save"
     },
     {
       "icon": "icon-play",
-      "label": "Execute"
+      "name": "Execute"
     },
     {
       "icon": "icon-resume",
-      "label": "Resume"
+      "name": "Resume"
     },
     {
       "icon": "",
-      "label": "Scheduling Execution",
+      "name": "Scheduling Execution",
       "items": [
         {
-          "label": "Specific Date & Time..."
+          "name": "Specific Date & Time..."
         },
         {
-          "label": "Custom Recurrence..."
+          "name": "Custom Recurrence..."
         },
         {
-          "label": "Periodic Recurrence..."
+          "name": "Periodic Recurrence..."
         }
       ]
     },
     {
       "icon": "icon-stop",
-      "label": "Stop"
+      "name": "Stop"
     },
     {
       "icon": "icon-copy",
-      "label": "Copy"
+      "name": "Copy"
     },
     {
       "icon": "icon-delete",
-      "label": "Delete"
+      "name": "Delete"
     }
   ],
   "data": [
@@ -52,7 +52,7 @@
             {
               "data": "Red Semgnents v01",
               "icon": "fa fa-file-word-o",
-              "label": "Red Semgnents v01",
+              "name": "Red Semgnents v01",
               "selectable": true,
               "id": 5,
               "type": "segment",
@@ -73,19 +73,22 @@
                 "runningValue": 75,
                 "saveModal": false
               },
+              "config": {
+                "criteria": "ahmed and mohamed or bilal"
+              },
               "versions": [
                 {
-                  "label": "v1"
+                  "name": "v1"
                 },
                 {
-                  "label": "v2"
+                  "name": "v2"
                 }
               ]
             },
             {
               "data": "Red Semgnents v02",
               "icon": "fa fa-file-word-o",
-              "label": "Red Semgnents v02",
+              "name": "Red Semgnents v02",
               "selectable": true,
               "id": 1,
               "type": "segment",
@@ -105,12 +108,15 @@
                 "running": true,
                 "runningValue": 75,
                 "saveModal": false
+              },
+              "config": {
+                "criteria": "ahmed and mohamed or bilal"
               }
             },
             {
               "data": "Red Semgnents v03",
               "icon": "fa fa-file-word-o",
-              "label": "Red Semgnents v03",
+              "name": "Red Semgnents v03",
               "selectable": true,
               "id": 2,
               "type": "segment",
@@ -130,12 +136,15 @@
                 "running": true,
                 "runningValue": 75,
                 "saveModal": false
+              },
+              "config": {
+                "criteria": "ahmed and mohamed or bilal"
               }
             },
             {
               "data": "Red Semgnents v04",
               "icon": "fa fa-file-word-o",
-              "label": "Red Semgnents v04",
+              "name": "Red Semgnents v04",
               "selectable": true,
               "id": 3,
               "type": "segment",
@@ -155,12 +164,15 @@
                 "running": true,
                 "runningValue": 75,
                 "saveModal": false
+              },
+              "config": {
+                "criteria": "ahmed and mohamed or bilal"
               }
             },
             {
               "data": "Red Semgnents v05",
               "icon": "fa fa-file-word-o",
-              "label": "Red Semgnents v05",
+              "name": "Red Semgnents v05",
               "selectable": true,
               "id": 4,
               "type": "segment",
@@ -183,7 +195,7 @@
             {
               "data": "Red Semgnents v06",
               "icon": "fa fa-file-word-o",
-              "label": "Red Semgnents v06",
+              "name": "Red Semgnents v06",
               "selectable": true,
               "id": 6,
               "type": "segment",
@@ -203,12 +215,15 @@
                 "running": true,
                 "runningValue": 75,
                 "saveModal": false
+              },
+              "config": {
+                "criteria": "ahmed and mohamed or bilal"
               }
             },
             {
               "data": "Red Semgnents v07",
               "icon": "fa fa-file-word-o",
-              "label": "Red Semgnents v07",
+              "name": "Red Semgnents v07",
               "selectable": true,
               "id": 7,
               "type": "segment",
@@ -228,20 +243,23 @@
                 "running": true,
                 "runningValue": 75,
                 "saveModal": false
+              },
+              "config": {
+                "criteria": "ahmed and mohamed or bilal"
               }
             }
           ],
           "collapsedIcon": "icon-layer",
           "data": "Red Semgnents",
-          "expandedIcon": "icon-layer",
-          "label": "Red Semgnents"
+          "icon": "icon-layer",
+          "name": "Red Semgnents"
         },
         {
           "children": [
             {
               "data": "Invoices for this month",
               "icon": "fa fa-file-word-o",
-              "label": "Invoices",
+              "name": "Invoices",
               "selectable": true,
               "type": "segment",
               "details": {
@@ -260,42 +278,45 @@
                 "running": true,
                 "runningValue": 75,
                 "saveModal": false
+              },
+              "config": {
+                "criteria": "ahmed and mohamed or bilal"
               }
             }
           ],
           "collapsedIcon": "icon-layer",
           "data": "Home Folder",
-          "expandedIcon": "icon-layer",
-          "label": "Home"
+          "icon": "icon-layer",
+          "name": "Home"
         }
       ],
       "collapsedIcon": "icon-layer",
       "data": "Segmaentation Tree",
-      "expandedIcon": "icon-layer",
-      "label": "Segmaentation Tree"
+      "icon": "icon-layer",
+      "name": "Segmaentation Tree"
     },
     {
       "children": [
         {
           "data": "Barcelona Photo",
           "icon": "fa fa-file-image-o",
-          "label": "barcelona.jpg"
+          "name": "barcelona.jpg"
         },
         {
           "data": "PrimeFaces Logo",
           "icon": "fa fa-file-image-o",
-          "label": "logo.jpg"
+          "name": "logo.jpg"
         },
         {
           "data": "PrimeUI Logo",
           "icon": "fa fa-file-image-o",
-          "label": "primeui.png"
+          "name": "primeui.png"
         }
       ],
       "collapsedIcon": "icon-layer",
       "data": "Pictures Folder",
-      "expandedIcon": "icon-layer",
-      "label": "Pictures"
+      "icon": "icon-layer",
+      "name": "Pictures"
     },
     {
       "children": [
@@ -304,38 +325,38 @@
             {
               "data": "Scarface Movie",
               "icon": "fa fa-file-video-o",
-              "label": "Scarface"
+              "name": "Scarface"
             },
             {
               "data": "Serpico Movie",
               "icon": "fa fa-file-video-o",
-              "label": "Serpico"
+              "name": "Serpico"
             }
           ],
           "data": "Pacino Movies",
-          "label": "Al Pacino"
+          "name": "Al Pacino"
         },
         {
           "children": [
             {
               "data": "Goodfellas Movie",
               "icon": "fa fa-file-video-o",
-              "label": "Goodfellas"
+              "name": "Goodfellas"
             },
             {
               "data": "Untouchables Movie",
               "icon": "fa fa-file-video-o",
-              "label": "Untouchables"
+              "name": "Untouchables"
             }
           ],
           "data": "De Niro Movies",
-          "label": "Robert De Niro"
+          "name": "Robert De Niro"
         }
       ],
       "collapsedIcon": "icon-layer",
       "data": "Movies Folder",
-      "expandedIcon": "icon-layer",
-      "label": "Movies"
+      "icon": "icon-layer",
+      "name": "Movies"
     }
   ]
 }

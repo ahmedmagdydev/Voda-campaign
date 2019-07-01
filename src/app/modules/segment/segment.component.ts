@@ -8,7 +8,6 @@ import {
 } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { SaveModalService } from '../../services/saveModal.service';
-
 @Component({
   selector: 'app-segment',
   templateUrl: './segment.component.html',
@@ -17,7 +16,8 @@ import { SaveModalService } from '../../services/saveModal.service';
 export class SegmentComponent implements OnInit {
   @Input() type: any;
   @Input() details: any;
-  @Output() segmentDetails: any;
+  @Input() onDrop: any;
+  @Input() config: any;
   segmentTab: string;
   moreActions: MenuItem[];
   // @Input() saveModal;
@@ -27,11 +27,9 @@ export class SegmentComponent implements OnInit {
   openSaveModal() {
     this.details.saveModal = true;
   }
+
   ngOnInit() {
-    // this.saveModalService.change.subscribe((isOpen: boolean) => {
-    //   this.details.saveModal = isOpen;
-    // });
-    // console.log(this.segmentTabsRef.nativeElement.attr('style','height:200px'));
+    // console.log('TCL: SegmentComponent -> config', this.config);
     this.segmentTabsRef.nativeElement.style.height =
       window.innerHeight - 218 + 'px';
     this.segmentTab = 'segmentDetails';
@@ -46,6 +44,5 @@ export class SegmentComponent implements OnInit {
 
   changeTab(tab: string) {
     this.segmentTab = tab;
-    // tslint:disable: no-unused-expression
   }
 }

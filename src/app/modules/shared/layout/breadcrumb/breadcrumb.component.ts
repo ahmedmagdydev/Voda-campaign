@@ -8,17 +8,15 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./breadcrumb.component.css']
 })
 export class BreadcrumbComponent implements OnInit {
-  // tslint:disable: indent
   public items: MenuItem[];
   public versions: any;
-  // tslint:disable-next-line: no-shadowed-variable
-  constructor(private BreadcrumbService: BreadcrumbService) {}
+  constructor(private breadcrumbService: BreadcrumbService) {}
 
   ngOnInit() {
-    this.BreadcrumbService.breadcrumb.subscribe(
+    this.breadcrumbService.breadcrumb.subscribe(
       (breadcrumb: any) => (this.items = breadcrumb)
     );
-    this.BreadcrumbService.versions.subscribe(
+    this.breadcrumbService.versions.subscribe(
       (versions: any) => (this.versions = versions)
     );
   }

@@ -1,0 +1,1055 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>voda-cms documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">voda-cms documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>SideMenuComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/shared/layout/side-menu/side-menu.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-side-menu</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./side-menu.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./side-menu.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#collapseSegment">collapseSegment</a>
+                            </li>
+                            <li>
+                                <a href="#custom">custom</a>
+                            </li>
+                            <li>
+                                <a href="#segmentContext">segmentContext</a>
+                            </li>
+                            <li>
+                                <a href="#segmentExpanded">segmentExpanded</a>
+                            </li>
+                            <li>
+                                <a href="#segmentsTree">segmentsTree</a>
+                            </li>
+                            <li>
+                                <a href="#selectedSegment">selectedSegment</a>
+                            </li>
+                            <li>
+                                <a href="#specific">specific</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#expandSegment">expandSegment</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#nodeSelected">nodeSelected</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(segmentsService: <a href="../injectables/SegmentsService.html">SegmentsService</a>, sideMenuService: <a href="../injectables/SideMenuService.html">SideMenuService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>segmentsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SegmentsService.html" target="_self" >SegmentsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sideMenuService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SideMenuService.html" target="_self" >SideMenuService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="expandSegment"></a>
+                    <span class="name">
+                        <b>
+                            expandSegment
+                        </b>
+                        <a href="#expandSegment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>expandSegment(e, name)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nodeSelected"></a>
+                    <span class="name">
+                        <b>
+                            nodeSelected
+                        </b>
+                        <a href="#nodeSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>nodeSelected(event, segmentName)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>segmentName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="collapseSegment"></a>
+                        <span class="name">
+                            <b>
+                            collapseSegment</b>
+                            <a href="#collapseSegment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="custom"></a>
+                        <span class="name">
+                            <b>
+                            custom</b>
+                            <a href="#custom"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="segmentContext"></a>
+                        <span class="name">
+                            <b>
+                            segmentContext</b>
+                            <a href="#segmentContext"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="segmentExpanded"></a>
+                        <span class="name">
+                            <b>
+                            segmentExpanded</b>
+                            <a href="#segmentExpanded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;notyet&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="segmentsTree"></a>
+                        <span class="name">
+                            <b>
+                            segmentsTree</b>
+                            <a href="#segmentsTree"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedSegment"></a>
+                        <span class="name">
+                            <b>
+                            selectedSegment</b>
+                            <a href="#selectedSegment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/TreeNode.html" target="_self" >TreeNode</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="specific"></a>
+                        <span class="name">
+                            <b>
+                            specific</b>
+                            <a href="#specific"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/shared/layout/side-menu/side-menu.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { TreeNode } from &#x27;primeng/api&#x27;;
+import { SegmentsService } from &#x27;../../../../services/segmentsService&#x27;;
+import { SideMenuService } from &#x27;../../../../services/sidemenu.service&#x27;;
+
+@Component({
+  selector: &#x27;app-side-menu&#x27;,
+  templateUrl: &#x27;./side-menu.component.html&#x27;,
+  styleUrls: [&#x27;./side-menu.component.css&#x27;]
+})
+export class SideMenuComponent implements OnInit {
+  // contextItems: MenuItem[];
+  segmentsTree;
+  segmentContext;
+  selectedSegment: TreeNode;
+  collapseSegment: Boolean;
+  segmentExpanded: String &#x3D; &#x27;notyet&#x27;;
+  specific &#x3D; false;
+  custom: boolean;
+  constructor(
+    // tslint:disable-next-line: no-shadowed-variable
+    private segmentsService: SegmentsService,
+    private sideMenuService: SideMenuService
+  ) {}
+
+  nodeSelected(event, segmentName) {
+    if (event.node.selectable) {
+      // tslint:disable-next-line: no-unused-expression
+      this.sideMenuService.open(
+        event.node.label,
+        event.node.type,
+        event.node.id,
+        event.node.parent,
+        event.node.icon,
+        event.node.versions,
+        segmentName,
+        event.node.details
+      );
+    }
+  }
+
+  ngOnInit() {
+    // this.segmentsService
+    //   .getFiles(&#x27;assets/data/segments.json&#x27;)
+    //   .then(segments &#x3D;&gt; (this.segmentsTree &#x3D; segments));
+
+    this.segmentsService.selectedSegments.subscribe(
+      (segmentse: any) &#x3D;&gt; (this.segmentsTree &#x3D; segmentse)
+    );
+    this.collapseSegment &#x3D; true;
+
+    this.segmentContext &#x3D; [
+      {
+        icon: &#x27;icon-info&#x27;,
+        label: &#x27;Show Details&#x27;
+      },
+      {
+        icon: &#x27;icon-save&#x27;,
+        label: &#x27;Save&#x27;
+      },
+      {
+        icon: &#x27;icon-play&#x27;,
+        label: &#x27;Execute&#x27;
+      },
+      {
+        icon: &#x27;icon-resume&#x27;,
+        label: &#x27;Resume&#x27;
+      },
+      {
+        icon: &#x27;&#x27;,
+        label: &#x27;Scheduling Execution&#x27;,
+        items: [
+          {
+            label: &#x27;Specific Date &amp; Time...&#x27;,
+            command: () &#x3D;&gt; {
+              this.specific &#x3D; true;
+            }
+          },
+          {
+            label: &#x27;Custom Recurrence...&#x27;,
+            command: () &#x3D;&gt; {
+              this.custom &#x3D; true;
+            }
+          },
+          {
+            label: &#x27;Periodic Recurrence...&#x27;,
+            command: () &#x3D;&gt; {
+              alert(&#x27;asd&#x27;);
+            }
+          }
+        ]
+      },
+      {
+        icon: &#x27;icon-stop&#x27;,
+        label: &#x27;Stop&#x27;
+      },
+      {
+        icon: &#x27;icon-copy&#x27;,
+        label: &#x27;Copy&#x27;
+      },
+      {
+        icon: &#x27;icon-delete&#x27;,
+        label: &#x27;Delete&#x27;
+      }
+    ];
+  }
+
+  expandSegment(e, name) {
+    e.preventDefault();
+    if (this.collapseSegment &#x3D;&#x3D;&#x3D; true) {
+      const _name &#x3D; name.split(&#x27; &#x27;).join(&#x27;_&#x27;);
+      this.segmentExpanded &#x3D; _name;
+      this.collapseSegment &#x3D; false;
+    } else {
+      this.segmentExpanded &#x3D; &#x27;notyet&#x27;;
+      this.collapseSegment &#x3D; true;
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;p-tree
+  *ngIf&#x3D;&quot;segmentsTree&quot;
+  [filter]&#x3D;&quot;true&quot;
+  filterPlaceholder&#x3D;&quot;Search in segments&quot;
+  draggableNodes&#x3D;&quot;true&quot;
+  droppableNodes&#x3D;&quot;true&quot;
+  droppableScope&#x3D;&quot;files&quot;
+  draggableScope&#x3D;&quot;server2&quot;
+  [value]&#x3D;&quot;segmentsTree.data&quot;
+  [(selection)]&#x3D;&quot;selectedSegment&quot;
+  (onNodeSelect)&#x3D;&quot;nodeSelected($event, segmentsTree.name)&quot;
+  selectionMode&#x3D;&quot;single&quot;
+  [contextMenu]&#x3D;&quot;cm&quot;
+&gt;
+  &lt;ng-template let-node pTemplate&#x3D;&quot;default&quot;&gt;
+    &lt;span&gt;{{ node.label }}&lt;/span&gt;
+  &lt;/ng-template&gt;
+  &lt;ng-template let-node pTemplate&#x3D;&quot;node&quot;&gt;
+    &lt;span pDraggable&#x3D;&quot;dd&quot; (onDragStart)&#x3D;&quot;dragStart($event, node)&quot;&gt;{{
+      node.label
+    }}&lt;/span&gt;
+  &lt;/ng-template&gt;
+&lt;/p-tree&gt;
+
+&lt;p-contextMenu #cm [model]&#x3D;&quot;segmentContext&quot; appendTo&#x3D;&quot;body&quot;&gt;&lt;/p-contextMenu&gt;
+&lt;p-dialog
+  [(visible)]&#x3D;&quot;specific&quot;
+  [draggable]&#x3D;&quot;false&quot;
+  [blockScroll]&#x3D;&quot;true&quot;
+  [closable]&#x3D;&quot;false&quot;
+  appendTo&#x3D;&quot;body&quot;
+  [style]&#x3D;&quot;{ width: &#x27;446px&#x27;, height: &#x27;537px&#x27; }&quot;
+&gt;
+  &lt;p-header&gt;
+    &lt;div class&#x3D;&quot;text-center&quot;&gt;
+      &lt;div class&#x3D;&quot;text-light&quot;&gt;Scheduling Execution&lt;/div&gt;
+      &lt;p class&#x3D;&quot;text-bold&quot;&gt;Specific Date &amp; Time&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/p-header&gt;
+  &lt;div class&#x3D;&quot;text-center&quot;&gt;
+    &lt;p-calendar [inline]&#x3D;&quot;true&quot;&gt;&lt;/p-calendar&gt;
+    &lt;div class&#x3D;&quot;align-items-center d-flex justify-content-center &quot;&gt;
+      &lt;label class&#x3D;&quot;mb-0 mr-3&quot; for&#x3D;&quot;&quot;&gt;Select Time&lt;/label&gt;
+      &lt;p-calendar [timeOnly]&#x3D;&quot;true&quot;&gt;&lt;/p-calendar&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p-footer&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-6&quot;&gt;
+        &lt;button class&#x3D;&quot;btn btn-secondary btn-block&quot; (click)&#x3D;&quot;specific &#x3D; false&quot;&gt;
+          cancel
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-6&quot;&gt;
+        &lt;button class&#x3D;&quot;btn btn-red btn-block&quot;&gt;save&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/p-footer&gt;
+&lt;/p-dialog&gt;
+&lt;p-dialog
+  [(visible)]&#x3D;&quot;custom&quot;
+  [draggable]&#x3D;&quot;false&quot;
+  [blockScroll]&#x3D;&quot;true&quot;
+  [closable]&#x3D;&quot;false&quot;
+  appendTo&#x3D;&quot;body&quot;
+  [style]&#x3D;&quot;{ width: &#x27;540px&#x27; }&quot;
+&gt;
+  &lt;p-header&gt;
+    &lt;div class&#x3D;&quot;text-center&quot;&gt;
+      &lt;div class&#x3D;&quot;text-light&quot;&gt;Scheduling Execution&lt;/div&gt;
+      &lt;p class&#x3D;&quot;text-bold&quot;&gt;Custom Recurrence&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/p-header&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;align-items-center row justify-content-center &quot;&gt;
+      &lt;div class&#x3D;&quot;col-4&quot;&gt;
+        &lt;label class&#x3D;&quot;mb-0 mr-3&quot; for&#x3D;&quot;&quot;&gt;Repeat every&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-4&quot;&gt;
+        &lt;input type&#x3D;&quot;number&quot; class&#x3D;&quot;form-control&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-4&quot;&gt;
+        &lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot; class&#x3D;&quot;form-control&quot;&gt;
+          &lt;option value&#x3D;&quot;day&quot;&gt;day&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;p-footer&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-6&quot;&gt;
+        &lt;button class&#x3D;&quot;btn btn-secondary btn-block&quot; (click)&#x3D;&quot;custom &#x3D; false&quot;&gt;
+          cancel
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-6&quot;&gt;
+        &lt;button class&#x3D;&quot;btn btn-red btn-block&quot;&gt;save&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/p-footer&gt;
+&lt;/p-dialog&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./side-menu.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">/deep/ body .ui-tree {
+  height: calc(100% - 46px);
+}
+
+/deep/ .ui-treenode-content-selected .ui-treenode-icon {
+  color: #f43a3a !important;
+}
+
+/deep
+  body
+  .ui-tree
+  .ui-tree-container
+  .ui-treenode
+  .ui-treenode-content
+  .ui-treenode-label.ui-state-highlight {
+  background-color: transparent;
+  color: #000;
+  font-weight: bold;
+}
+
+/deep/ body .ui-tree {
+  width: auto;
+  border: none;
+}
+/deep/ body .ui-tree .ui-tree-filter-container .ui-tree-filter-icon {
+  color: #515151;
+}
+.topNavigation {
+  list-style: none;
+  padding: 0;
+  height: calc(100% - 26px);
+  background-color: #fff;
+  padding-top: 25px;
+}
+
+.topNavigation &gt; li {
+  position: relative;
+}
+
+.topNavigation &gt; li &gt; a {
+  width: 100%;
+  padding: 5px 5px 5px 25px;
+  color: #000;
+}
+.topNavigation &gt; li &gt; a &gt; span {
+  transition: color 0.1s linear;
+}
+.topNavigation &gt; li &gt; a:hover {
+  text-decoration: none;
+}
+.topNavigation &gt; li &gt; a .icon-arrow_back {
+  font-size: 24px;
+}
+.topNavigation &gt; li &gt; a:hover span {
+  color: red;
+}
+.topNavigation &gt; li &gt; p-tree {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.topNavigation:not(.collapseSegment) &gt; li &gt; p-tree {
+  position: static;
+}
+.topNavigation:not(.collapseSegment) &gt; li &gt; a {
+  font-weight: bold;
+}
+.collapseSegment .backToSegments {
+  display: none;
+}
+/* /deep/ .as-split-area {
+  overflow-x: visible;
+  overflow-y: visible;
+} */
+
+/deep/ .ui-treenode-content[aria-expanded&#x3D;&#x27;true&#x27;] &gt; .ui-treenode-label {
+  font-weight: bold;
+}
+
+span.icon-arrow_back {
+  position: relative;
+  right: 9px;
+}
+/deep/ .ui-inputtext.ui-tree-filter {
+  border: 1px solid #dde1e8;
+  padding-left: 16px !important;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><p-tree  *ngIf="segmentsTree"  [filter]="true"  filterPlaceholder="Search in segments"  draggableNodes="true"  droppableNodes="true"  droppableScope="files"  draggableScope="server2"  [value]="segmentsTree.data"  [(selection)]="selectedSegment"  (onNodeSelect)="nodeSelected($event, segmentsTree.name)"  selectionMode="single"  [contextMenu]="cm">  <ng-template let-node pTemplate="default">    <span>{{ node.label }}</span>  </ng-template>  <ng-template let-node pTemplate="node">    <span pDraggable="dd" (onDragStart)="dragStart($event, node)">{{      node.label    }}</span>  </ng-template></p-tree><p-contextMenu #cm [model]="segmentContext" appendTo="body"></p-contextMenu><p-dialog  [(visible)]="specific"  [draggable]="false"  [blockScroll]="true"  [closable]="false"  appendTo="body"  [style]="{ width: \'446px\', height: \'537px\' }">  <p-header>    <div class="text-center">      <div class="text-light">Scheduling Execution</div>      <p class="text-bold">Specific Date & Time</p>    </div>  </p-header>  <div class="text-center">    <p-calendar [inline]="true"></p-calendar>    <div class="align-items-center d-flex justify-content-center ">      <label class="mb-0 mr-3" for="">Select Time</label>      <p-calendar [timeOnly]="true"></p-calendar>    </div>  </div>  <p-footer>    <div class="row">      <div class="col-6">        <button class="btn btn-secondary btn-block" (click)="specific = false">          cancel        </button>      </div>      <div class="col-6">        <button class="btn btn-red btn-block">save</button>      </div>    </div>  </p-footer></p-dialog><p-dialog  [(visible)]="custom"  [draggable]="false"  [blockScroll]="true"  [closable]="false"  appendTo="body"  [style]="{ width: \'540px\' }">  <p-header>    <div class="text-center">      <div class="text-light">Scheduling Execution</div>      <p class="text-bold">Custom Recurrence</p>    </div>  </p-header>  <div class="container">    <div class="align-items-center row justify-content-center ">      <div class="col-4">        <label class="mb-0 mr-3" for="">Repeat every</label>      </div>      <div class="col-4">        <input type="number" class="form-control" />      </div>      <div class="col-4">        <select name="" id="" class="form-control">          <option value="day">day</option>        </select>      </div>    </div>  </div>  <p-footer>    <div class="row">      <div class="col-6">        <button class="btn btn-secondary btn-block" (click)="custom = false">          cancel        </button>      </div>      <div class="col-6">        <button class="btn btn-red btn-block">save</button>      </div>    </div>  </p-footer></p-dialog></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BreadcrumbComponent', 'selector': 'app-breadcrumb'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'MainTabsComponent', 'selector': 'app-main-tabs'},{'name': 'SaveModalComponent', 'selector': 'app-save-modal'},{'name': 'SegmentAuditComponent', 'selector': 'app-segment-audit'},{'name': 'SegmentComponent', 'selector': 'app-segment'},{'name': 'SegmentConfigComponent', 'selector': 'app-segment-config'},{'name': 'SegmentDataComponent', 'selector': 'app-segment-data'},{'name': 'SegmentDetailsComponent', 'selector': 'app-segment-details'},{'name': 'SideMenuComponent', 'selector': 'app-side-menu'},{'name': 'StaticMenuComponent', 'selector': 'app-static-menu'},{'name': 'TextEditorComponent', 'selector': 'app-text-editor'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SideMenuComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SideMenuComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

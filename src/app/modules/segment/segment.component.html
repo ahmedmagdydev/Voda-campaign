@@ -58,7 +58,7 @@
     <app-segment-details [segmentDetails]="details"></app-segment-details>
   </div>
   <div [ngClass]="{ show: segmentTab == 'segmentConfig' }">
-    <app-segment-config></app-segment-config>
+    <app-segment-config [segmentConfig]="config"></app-segment-config>
   </div>
   <div [ngClass]="{ show: segmentTab == 'segmentAudit' }">
     <app-segment-audit></app-segment-audit>

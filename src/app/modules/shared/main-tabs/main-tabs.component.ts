@@ -1,29 +1,28 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { SideMenuService } from '../../../services/sidemenu.service';
 import { BreadcrumbService } from '../../../services/breadcrumb.service';
-
+import { DragDropService } from '../../../services/dragDrop.service';
 @Component({
   selector: 'app-main-tabs',
   templateUrl: './main-tabs.component.html',
   styleUrls: ['./main-tabs.component.css']
 })
 export class MainTabsComponent implements OnInit {
-  // tslint:disable: indent
   @Output() segments = [];
-  @Output() details;
-  // @Output() saveModal;
+  @Output() dropedItem;
   segmentsMenuArray = [];
   selectedTab = 0;
   selectedTabMenu: string;
-  // tslint:disable-next-line: no-shadowed-variable
   constructor(
     private sideMenuService: SideMenuService,
-    private breadcrumbService: BreadcrumbService
+    private breadcrumbService: BreadcrumbService,
+    private dragDropService: DragDropService
   ) {}
   onTabChange(e: any) {
     this.breadcrumbService.changeBreadcrumb(this.segments[e.index]);
     this.selectedTab = e.index;
   }
+
   handleClose(e: any) {
     this.segments[e.index].details.saveModal = false;
     this.segments.splice(e.index, 1);
@@ -45,15 +44,23 @@ export class MainTabsComponent implements OnInit {
     }
   }
 
+  onDrop(e) {
+    this.dropedItem = e;
+  }
   ngOnInit() {
+    this.dragDropService.dropItem.subscribe(item => {
+      this.onDrop(item);
+    });
     this.sideMenuService.segment.subscribe((segment: any) => {
       const resultObject = this.search(segment.id, this.segments);
       if (resultObject === undefined) {
         this.segments.push(segment);
         const segmentItem = {
-          label: segment.label,
+          label: segment.name,
           command: () => {
-            this.selectedTab = this.segments.indexOf(segment);
+            const _index = this.segments.indexOf(segment);
+            this.selectedTab = _index;
+            this.breadcrumbService.changeBreadcrumb(this.segments[_index]);
           }
         };
         this.selectedTab = this.segments.length - 1;

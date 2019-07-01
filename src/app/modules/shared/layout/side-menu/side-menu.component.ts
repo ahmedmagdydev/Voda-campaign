@@ -1,53 +1,75 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { TreeNode } from 'primeng/api';
 import { SegmentsService } from '../../../../services/segmentsService';
 import { SideMenuService } from '../../../../services/sidemenu.service';
-
+import { DragDropService } from '../../../../services/dragDrop.service';
 @Component({
   selector: 'app-side-menu',
   templateUrl: './side-menu.component.html',
   styleUrls: ['./side-menu.component.css']
 })
 export class SideMenuComponent implements OnInit {
-  // contextItems: MenuItem[];
+  @ViewChild('treeWrapper') treeWrapper: ElementRef;
+  @ViewChild('dropZone') dropZone: ElementRef;
+
   segmentsTree;
   segmentContext;
   selectedSegment: TreeNode;
-  collapseSegment: Boolean;
-  segmentExpanded: String = 'notyet';
-  specific = false;
+  specific: boolean;
   custom: boolean;
+  dropZoneOn = 'none';
+  options = {
+    allowDrag: true,
+    allowDrop: false,
+    actionMapping: {
+      mouse: {
+        dragStart: () => {
+          this.dropZoneOn = 'block';
+        },
+        drop: () => {},
+        dragEnd: () => {
+          this.dropZoneOn = 'none';
+        }
+      }
+    }
+  };
+
   constructor(
-    // tslint:disable-next-line: no-shadowed-variable
     private segmentsService: SegmentsService,
-    private sideMenuService: SideMenuService
+    private sideMenuService: SideMenuService,
+    private dragDropService: DragDropService
   ) {}
 
-  nodeSelected(event, segmentName) {
-    if (event.node.selectable) {
-      // tslint:disable-next-line: no-unused-expression
+  onEvent(event) {
+    const _node = event.node.data;
+    if (event.node.data.selectable) {
       this.sideMenuService.open(
-        event.node.label,
-        event.node.type,
-        event.node.id,
+        _node.name,
+        _node.type,
+        _node.id,
         event.node.parent,
-        event.node.icon,
-        event.node.versions,
-        segmentName,
-        event.node.details
+        _node.icon,
+        _node.versions,
+        _node.name,
+        _node.details,
+        _node.config
       );
     }
   }
-
+  onDrop(e) {
+    this.dragDropService.getDropItem(e);
+  }
   ngOnInit() {
-    // this.segmentsService
-    //   .getFiles('assets/data/segments.json')
-    //   .then(segments => (this.segmentsTree = segments));
+    setTimeout(() => {
+      this.dragDropService.setDropZoneSize(
+        this.treeWrapper.nativeElement.parentElement.parentElement.clientWidth,
+        this.dropZone.nativeElement
+      );
+    }, 500);
 
     this.segmentsService.selectedSegments.subscribe(
       (segmentse: any) => (this.segmentsTree = segmentse)
     );
-    this.collapseSegment = true;
 
     this.segmentContext = [
       {
@@ -103,17 +125,5 @@ export class SideMenuComponent implements OnInit {
         label: 'Delete'
       }
     ];
-  }
-
-  expandSegment(e, name) {
-    e.preventDefault();
-    if (this.collapseSegment === true) {
-      const _name = name.split(' ').join('_');
-      this.segmentExpanded = _name;
-      this.collapseSegment = false;
-    } else {
-      this.segmentExpanded = 'notyet';
-      this.collapseSegment = true;
-    }
   }
 }

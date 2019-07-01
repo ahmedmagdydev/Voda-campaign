@@ -1,17 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DragDropService } from '../../../services/dragDrop.service';
 @Component({
   selector: 'app-segment-config',
   templateUrl: './segment-config.component.html',
   styleUrls: ['./segment-config.component.css']
 })
 export class SegmentConfigComponent implements OnInit {
+  @Input() segmentConfig;
+
   storedFields;
   sqlGenerated;
   generatedSql;
   optemizeSqlCheck;
-  constructor() {}
-
+  constructor(private dragDropService: DragDropService) {}
   ngOnInit() {
+    // console.log(this.segmentConfig);
+    this.dragDropService.dropItem.subscribe(item => console.log(item));
     this.storedFields = [
       {
         tableName: 'V_CONTRACT	',
